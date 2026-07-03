@@ -1,12 +1,6 @@
 # JG Planos de Saúde
 
-Landing page para planos de saúde empresariais familiares com CNPJ.
+Landing page focada em plano de saúde empresarial familiar para pessoas com CNPJ.
 
 ## Publicação
-Envie os arquivos da raiz deste projeto para o GitHub:
-- index.html
-- style.css
-- script.js
-- pasta imagens/
-
-No Netlify, use a raiz do repositório como diretório de publicação.
+Envie todos os arquivos deste projeto para a raiz do repositório GitHub conectado ao Netlify.
