@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="120" viewBox="0 0 360 120" role="img" aria-label="SulAmérica">
-  <rect width="360" height="120" rx="22" fill="#ffffff"/>
-  <path d="M70 40 C115 10, 170 10, 218 38" fill="none" stroke="#f58220" stroke-width="9" stroke-linecap="round"/>
-  <path d="M92 49 C132 27, 174 28, 207 49" fill="none" stroke="#f58220" stroke-width="5" stroke-linecap="round" opacity="0.95"/>
-  <text x="50" y="83" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#004990">SulAmérica</text>
-</svg>
