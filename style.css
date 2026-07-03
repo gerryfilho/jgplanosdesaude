@@ -98,3 +98,91 @@
 @media(max-width:640px){
   .hero-photo-card{height:420px;border-radius:30px}.hero-photo-card .hero-photo{object-position:50% 8%;transform:scale(1.05)}
 }
+
+
+/* Seção comparativa de operadoras e hospitais */
+.operators-compare{background:linear-gradient(180deg,#f8fbff 0%,#fff 100%)}
+.section-intro{max-width:880px;margin:0 auto 34px;text-align:center;color:var(--muted);font-size:17px;line-height:1.75}
+.operator-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:28px}
+.operator-card{background:#fff;border:1px solid #e5eaf2;border-radius:24px;padding:26px;box-shadow:0 14px 35px rgba(7,25,54,.07);position:relative;overflow:hidden}
+.operator-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:5px;background:linear-gradient(90deg,#00a859,#0b65d8)}
+.operator-card.premium:before{background:linear-gradient(90deg,#0b65d8,#041a36)}
+.operator-card.economy:before{background:linear-gradient(90deg,#00a859,#f2a900)}
+.operator-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+.operator-head img{height:52px;max-width:170px;object-fit:contain}
+.operator-head span{background:#eef7ff;color:#0b376d;font-weight:800;border-radius:999px;padding:8px 12px;font-size:13px;white-space:nowrap}
+.operator-card h3{font-size:26px;margin:0 0 10px;color:#071936}
+.operator-fit{color:var(--muted);line-height:1.65;margin:0 0 18px}
+.hospital-list{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px}
+.hospital-list li{background:#f8fafc;border:1px solid #e9eef6;border-radius:14px;padding:11px 13px;font-weight:700;color:#24344d}
+.hospital-list li:before{content:"🏥";margin-right:8px}
+.operator-link{display:inline-flex;align-items:center;justify-content:center;width:100%;padding:14px 18px;border-radius:14px;background:#00a859;color:#fff;font-weight:900;text-decoration:none;box-shadow:0 10px 22px rgba(0,168,89,.22)}
+.operator-link:hover{transform:translateY(-1px)}
+.analysis-box{margin-top:28px;border-radius:26px;background:linear-gradient(135deg,#041a36,#0b376d);color:#fff;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:30px;box-shadow:var(--shadow)}
+.analysis-box .section-label{background:rgba(255,255,255,.14);color:#fff}
+.analysis-box h3{font-size:30px;line-height:1.15;margin:12px 0}
+.analysis-box p{color:#dce8f7;line-height:1.7;margin:0}
+.analysis-box .btn{white-space:nowrap}
+@media (max-width:900px){.operator-cards{grid-template-columns:1fr}.analysis-box{display:block}.analysis-box .btn{margin-top:22px;width:100%}}
+@media (max-width:560px){.operator-head{align-items:flex-start;flex-direction:column}.operator-head img{height:46px}.operator-card{padding:22px}.analysis-box h3{font-size:24px}}
+
+/* Depoimentos com fotos ilustrativas e prova social */
+.testimonials-grid article{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.testimonial-person{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding-bottom:12px;
+  border-bottom:1px solid #edf2f7;
+}
+.testimonial-person img{
+  width:72px;
+  height:72px;
+  min-width:72px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #fff;
+  box-shadow:0 10px 24px rgba(7,25,54,.13);
+  background:#f2f6fb;
+}
+.testimonial-person strong{
+  margin:0;
+  font-size:16px;
+  color:#071936;
+}
+.testimonial-person span,
+.testimonial-person small{
+  margin-top:4px;
+}
+.testimonial-disclaimer{
+  margin-top:26px;
+  border-radius:24px;
+  padding:24px;
+  background:linear-gradient(135deg,#f8fbff,#ffffff);
+  border:1px solid #e5eaf2;
+  box-shadow:0 14px 35px rgba(7,25,54,.07);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.testimonial-disclaimer strong{
+  display:block;
+  color:#071936;
+  margin-bottom:8px;
+}
+.testimonial-disclaimer p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.65;
+}
+.testimonial-disclaimer .btn{
+  white-space:nowrap;
+}
+@media(max-width:780px){
+  .testimonial-disclaimer{display:block}.testimonial-disclaimer .btn{width:100%;margin-top:18px}.testimonial-person{align-items:flex-start}
+}
