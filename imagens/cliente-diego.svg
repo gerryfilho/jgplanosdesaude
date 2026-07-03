@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Foto ilustrativa corporativa">
+  <defs>linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea85a"/><stop offset="1" stop-color="#08345f"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#071936" flood-opacity=".28"/></filter></defs>
+  <rect width="240" height="240" rx="120" fill="url(#bg)"/>
+  <circle cx="120" cy="96" r="44" fill="#f1d0b5"/>
+  <path d="M77 96c2-42 30-58 58-50 25 7 32 31 28 51-12-15-27-23-45-22-16 1-28 8-41 21Z" fill="#28313d"/>
+  <path d="M66 203c8-45 38-74 54-74s46 29 54 74" fill="#0b376d" filter="url(#shadow)"/>
+  <path d="M96 137h48l-24 58z" fill="#ffffff"/>
+  <path d="M116 139h8l8 55-12 14-12-14z" fill="#0ea85a"/>
+  <path d="M83 158l24-24 13 72-37-48Zm74 0-24-24-13 72 37-48Z" fill="#0b376d"/>
+  <circle cx="120" cy="238" r="78" fill="#ffffff" opacity=".12"/>
+</svg>

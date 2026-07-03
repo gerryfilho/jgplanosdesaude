@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JG Planos de Saúde | Plano Empresarial Familiar com CNPJ</title>
+  <meta name="description" content="Plano de saúde empresarial para famílias com CNPJ ou MEI. Compare Unimed, SulAmérica, Bradesco Saúde, Amil e Hapvida com Gerry Dias, corretor especializado." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="JG Planos de Saúde">
+        <span class="brand-logo">JG</span>
+        <span><strong>JG Planos de Saúde</strong><small>Empresarial familiar com CNPJ</small></span>
+      </a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="#cotacao">Cotação</a>
+        <a href="#operadoras">Operadoras</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-whatsapp btn-small" href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Quero%20uma%20cotação%20de%20plano%20empresarial%20familiar." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="tag">Famílias com CNPJ • 2 a 29 vidas</span>
+          <h1>Plano de Saúde Empresarial para Você e Sua Família</h1>
+          <p>Utilize seu CNPJ ou MEI para contratar um plano empresarial com melhores condições e proteger quem mais importa: sua família.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cotacao">Solicitar Cotação</a>
+            <a class="btn btn-outline" href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Tenho%20CNPJ%20e%20quero%20colocar%20minha%20família%20no%20plano." target="_blank" rel="noopener">Falar no WhatsApp</a>
+          </div>
+          <div class="proof-row">
+            <span>Unimed</span><span>SulAmérica</span><span>Bradesco Saúde</span><span>Amil</span><span>Hapvida</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Gerry Dias">
+          <div class="shape shape-one"></div>
+          <div class="photo-frame">
+            <img src="imagens/gerry-hero.jpeg" alt="Gerry Dias, corretor de planos de saúde" />
+          </div>
+          <div class="floating-card card-a">Atendimento consultivo</div>
+          <div class="floating-card card-b">Família protegida pelo CNPJ</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cotacao" class="quote-section">
+      <div class="container quote-card">
+        <div class="quote-copy">
+          <span class="tag light">Cotação personalizada</span>
+          <h2>Receba uma Cotação para sua Família pelo seu CNPJ</h2>
+          <p>Compare as melhores opções de planos empresariais e receba uma simulação personalizada, com orientação clara sobre rede, regras de inclusão familiar e custo-benefício.</p>
+          <div class="logo-strip">
+            <img src="imagens/unimed.png" alt="Unimed" />
+            <img src="imagens/sulamerica.png" alt="SulAmérica" />
+            <img src="imagens/bradesco-saude.png" alt="Bradesco Saúde" />
+            <img src="imagens/amil.png" alt="Amil" />
+            <img src="imagens/hapvida.jpg" alt="Hapvida" />
+          </div>
+          <p class="privacy">🔒 Seus dados estão protegidos. Usamos suas informações apenas para elaborar sua cotação.</p>
+        </div>
+
+        <form id="leadForm" class="form-box">
+          <h3>Solicite sua simulação</h3>
+          <label>Nome e Sobrenome
+            <input id="nome" type="text" placeholder="Ex.: João Silva" required />
+          </label>
+          <label>WhatsApp com DDD
+            <input id="telefone" type="tel" placeholder="(71) 99999-9999" required />
+          </label>
+          <label>E-mail <small>(opcional)</small>
+            <input id="email" type="email" placeholder="seuemail@exemplo.com" />
+          </label>
+
+          <fieldset class="radio-group">
+            <legend>Você possui CNPJ ou MEI ativo?</legend>
+            <label><input type="radio" name="cnpj" value="Sim" required /> Sim</label>
+            <label><input type="radio" name="cnpj" value="Não" /> Não</label>
+          </fieldset>
+
+          <div id="cnpjSim" class="conditional active">
+            <label>Quantas pessoas serão incluídas no plano?
+              <select id="vidas">
+                <option value="">Selecione</option>
+                <option>2 pessoas</option>
+                <option>3 pessoas</option>
+                <option>4 a 9 pessoas</option>
+                <option>10 a 29 pessoas</option>
+                <option>30 ou mais pessoas</option>
+              </select>
+            </label>
+            <p class="field-note">Pode ser apenas família ou também sócios e colaboradores. Informe detalhes na mensagem.</p>
+          </div>
+
+          <div id="cnpjNao" class="conditional alert-box">
+            <strong>Ainda não possui CNPJ ou MEI?</strong>
+            <p>Sem problemas. Podemos verificar outras opções disponíveis para seu perfil:</p>
+            <ul>
+              <li>Hapvida Individual, disponível para qualquer pessoa.</li>
+              <li>Unimed e SulAmérica por Entidade de Classe, para profissionais com diploma de curso superior e conforme critérios de elegibilidade.</li>
+            </ul>
+          </div>
+
+          <label>Mensagem <small>(opcional)</small>
+            <textarea id="mensagem" rows="4" placeholder="Ex.: Quero incluir minha esposa, filhos ou outros familiares elegíveis utilizando meu CNPJ."></textarea>
+          </label>
+          <button id="submitButton" class="btn btn-primary btn-full" type="submit">Solicitar Cotação</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="beneficios" class="benefits section-padding">
+      <div class="container">
+        <span class="section-label">Por que contratar pelo CNPJ?</span>
+        <h2>Uma solução pensada para proteger sua família</h2>
+        <div class="cards-grid four">
+          <article><span>💰</span><h3>Mais custo-benefício</h3><p>Planos empresariais podem oferecer condições mais vantajosas conforme perfil, idade e quantidade de pessoas.</p></article>
+          <article><span>👨‍👩‍👧‍👦</span><h3>Família protegida</h3><p>É possível avaliar a inclusão de familiares elegíveis, conforme regras de cada operadora e contrato.</p></article>
+          <article><span>🏥</span><h3>Hospitais desejados</h3><p>A análise considera hospitais importantes em Salvador, como São Rafael, Aliança e Cardiopulmonar.</p></article>
+          <article><span>🤝</span><h3>Suporte contínuo</h3><p>Atendimento antes, durante e depois da contratação, inclusive em dúvidas sobre boletos, rede e contrato.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="operadoras" class="operators section-padding">
+      <div class="container">
+        <span class="section-label">Compare as principais operadoras</span>
+        <h2>Operadoras, hospitais e regras de contratação</h2>
+        <p class="intro">Unimed, Amil, SulAmérica e Bradesco Saúde possuem como principais referências o Hospital São Rafael, Hospital Aliança e Hospital Cardiopulmonar. A diferença está nas regras, perfil da família e condições de cada plano.</p>
+        <div class="operator-grid">
+          <article class="operator-card"><div class="op-head"><img src="imagens/unimed.png" alt="Unimed"><strong>A partir de 2 pessoas</strong></div><h3>Unimed</h3><p>Boa opção para famílias com CNPJ que buscam rede ampla e forte presença local.</p><ul><li>Hospital São Rafael</li><li>Hospital Aliança</li><li>Hospital Cardiopulmonar</li></ul><a href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Quero%20cotação%20Unimed%20para%20minha%20família%20pelo%20CNPJ." target="_blank">Solicitar cotação Unimed</a></article>
+          <article class="operator-card"><div class="op-head"><img src="imagens/amil.png" alt="Amil"><strong>A partir de 2 pessoas</strong></div><h3>Amil</h3><p>Alternativa para famílias que desejam opções competitivas e rede qualificada.</p><ul><li>Hospital São Rafael</li><li>Hospital Aliança</li><li>Hospital Cardiopulmonar</li></ul><a href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Quero%20cotação%20Amil%20para%20minha%20família%20pelo%20CNPJ." target="_blank">Solicitar cotação Amil</a></article>
+          <article class="operator-card premium"><div class="op-head"><img src="imagens/sulamerica.png" alt="SulAmérica"><strong>A partir de 3 pessoas</strong></div><h3>SulAmérica</h3><p>Indicada para famílias que buscam rede premium e opções com reembolso conforme plano.</p><ul><li>Hospital São Rafael</li><li>Hospital Aliança</li><li>Hospital Cardiopulmonar</li></ul><a href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Quero%20cotação%20SulAmérica%20para%20minha%20família%20pelo%20CNPJ." target="_blank">Solicitar cotação SulAmérica</a></article>
+          <article class="operator-card premium"><div class="op-head"><img src="imagens/bradesco-saude.png" alt="Bradesco Saúde"><strong>A partir de 3 pessoas</strong></div><h3>Bradesco Saúde</h3><p>Para famílias que procuram cobertura de alto padrão e rede nacional.</p><ul><li>Hospital São Rafael</li><li>Hospital Aliança</li><li>Hospital Cardiopulmonar</li></ul><a href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Quero%20cotação%20Bradesco%20Saúde%20para%20minha%20família%20pelo%20CNPJ." target="_blank">Solicitar cotação Bradesco</a></article>
+          <article class="operator-card economy"><div class="op-head"><img src="imagens/hapvida.jpg" alt="Hapvida"><strong>Rede própria</strong></div><h3>Hapvida</h3><p>Opção para quem busca economia, atendimento regional e alternativas individuais quando necessário.</p><ul><li>Rede própria Hapvida</li><li>Atendimento integrado</li><li>Forte presença regional</li></ul><a href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Quero%20cotação%20Hapvida%20para%20minha%20família." target="_blank">Solicitar cotação Hapvida</a></article>
+        </div>
+        <div class="analysis-box">
+          <div><h3>Não sabe qual operadora escolher?</h3><p>Eu comparo rede, regras de inclusão familiar, hospitais, idade dos beneficiários e custo-benefício para indicar a melhor opção.</p></div>
+          <a class="btn btn-primary" href="#cotacao">Receber análise gratuita</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about section-padding">
+      <div class="container about-grid">
+        <div class="about-photo"><img src="imagens/gerry-sobre.jpeg" alt="Gerry Dias, corretor especializado em planos empresariais"></div>
+        <div class="about-text">
+          <span class="section-label">Sobre o corretor</span>
+          <h2>Gerry Dias</h2>
+          <p>Corretor de Planos de Saúde com foco em planos empresariais familiares. Bacharel em Administração de Empresas pela UFC, com conhecimento em contratos, normas e leis da ANS.</p>
+          <p>Meu objetivo é orientar empresários, MEIs e famílias com CNPJ a escolherem a melhor solução entre as principais operadoras, com clareza e suporte antes e depois da contratação.</p>
+          <div class="check-list"><span>✓ Atendimento consultivo</span><span>✓ Comparação entre operadoras</span><span>✓ Suporte pós-venda</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials section-padding">
+      <div class="container">
+        <span class="section-label">Depoimentos de clientes</span>
+        <h2>Clientes que destacam atendimento, suporte e confiança</h2>
+        <div class="testimonial-grid">
+          <article class="testimonial"><div class="person"><img src="imagens/cliente-balbino.svg" alt="Foto ilustrativa"><div><strong>Balbino Guerreiro</strong><span>Guerreiro Contabilidade – Salvador/BA</span><small>Cliente Hapvida</small></div></div><p>“O Gerry está sempre disponível quando preciso, seja para tirar dúvidas ou ajudar com boletos. Ele fez a migração do meu plano individual para um plano empresarial mais econômico, mantendo uma cobertura que atendia às minhas necessidades e aproveitando todas as minhas carências.”</p><small class="caption">Foto ilustrativa por solicitação do cliente.</small></article>
+          <article class="testimonial"><div class="person"><img src="imagens/cliente-diego.svg" alt="Foto ilustrativa"><div><strong>Diego Aluizio</strong><span>VB COMPLEX – Lauro de Freitas/BA</span><small>Cliente SulAmérica</small></div></div><p>“O Gerry me ajuda muito e oferece um suporte excelente. Está sempre disponível por telefone quando preciso. Todos os meses é ele quem me envia os boletos do plano. Sempre que surge alguma necessidade, posso contar com sua orientação.”</p><small class="caption">Foto ilustrativa por solicitação do cliente.</small></article>
+          <article class="testimonial"><div class="person"><img src="imagens/cliente-fabio.svg" alt="Foto ilustrativa"><div><strong>Fábio Santos</strong><span>Novos e Usados – Salvador/BA</span><small>Cliente SulAmérica</small></div></div><p>“O Gerry está sempre disponível quando preciso. Ele não é daqueles corretores que desaparecem depois da contratação; pelo contrário, continua prestando todo o suporte necessário, esclarecendo dúvidas com clareza, honestidade e atenção.”</p><small class="caption">Foto ilustrativa por solicitação do cliente.</small></article>
+        </div>
+        <div class="reference-box">
+          <div><strong>Transparência e confiança</strong><p>Fotos ilustrativas por solicitação dos clientes. Fale com o corretor para solicitar indicações de clientes que autorizaram compartilhar sua experiência e contato.</p></div>
+          <a class="btn btn-outline-dark" href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Gostaria%20de%20solicitar%20referências%20de%20clientes%20antes%20de%20contratar." target="_blank" rel="noopener">Solicitar referências</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq section-padding">
+      <div class="container">
+        <span class="section-label">Dúvidas frequentes</span>
+        <h2>Perguntas comuns antes da contratação</h2>
+        <div class="faq-grid">
+          <details open><summary>Quem posso incluir no plano empresarial?</summary><p>A inclusão depende das regras da operadora e do contrato. Em muitos casos, é possível avaliar familiares elegíveis, como cônjuge, filhos e outros familiares. A análise é feita caso a caso.</p></details>
+          <details><summary>MEI pode contratar plano empresarial?</summary><p>Sim, o MEI pode ser elegível conforme regras da operadora, tempo de CNPJ e documentação exigida.</p></details>
+          <details><summary>Unimed e Amil começam com quantas pessoas?</summary><p>Na estratégia atual, Unimed e Amil podem ser avaliadas a partir de 2 pessoas, conforme regras vigentes e perfil do contratante.</p></details>
+          <details><summary>SulAmérica e Bradesco começam com quantas pessoas?</summary><p>SulAmérica e Bradesco Saúde são avaliadas a partir de 3 pessoas, conforme as regras da operadora e documentação.</p></details>
+          <details><summary>Existe carência?</summary><p>As carências variam conforme operadora, tipo de plano, quantidade de vidas e regras contratuais. Na cotação, explicamos as condições aplicáveis.</p></details>
+          <details><summary>Preciso pagar pela cotação?</summary><p>Não. A cotação e a análise inicial são gratuitas e sem compromisso.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><strong>JG Planos de Saúde</strong><p>Gerry Dias Corretor de Planos de Saúde</p></div>
+      <div><p>WhatsApp: (71) 98118-1395</p><p>Salvador - Bahia</p></div>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Quero%20uma%20cotação%20de%20plano%20de%20saúde%20para%20minha%20família." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3.2A12.74 12.74 0 0 0 5.2 22.65L4 29l6.52-1.7A12.77 12.77 0 1 0 16.04 3.2Zm0 23.36c-1.93 0-3.8-.52-5.44-1.5l-.39-.23-3.86 1 1.03-3.76-.25-.39a10.52 10.52 0 1 1 8.91 4.88Zm5.77-7.88c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.18.21-.37.24-.68.08-.31-.16-1.31-.48-2.5-1.54-.92-.82-1.54-1.84-1.72-2.15-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.23 3.4 5.39 4.77.75.32 1.34.52 1.8.66.76.24 1.45.21 1.99.13.61-.09 1.85-.76 2.12-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
