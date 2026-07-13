@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Solicitação recebida | JG Planos de Saúde</title>
+  <meta name="description" content="Confirmação de recebimento da solicitação de cotação." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NKNN2KNC');</script>
+  <!-- End Google Tag Manager -->
+
+  <script>
+    (function () {
+      if (sessionStorage.getItem('jg_quote_submitted') !== '1') {
+        return;
+      }
+
+      sessionStorage.removeItem('jg_quote_submitted');
+
+      // Snippet fornecido pelo Google para a conversão REQUEST_QUOTE.
+      gtag('event', 'conversion_event_request_quote', {});
+    })();
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Inter, Arial, sans-serif;
+      color: #0f172a;
+      background:
+        radial-gradient(circle at top left, rgba(18, 140, 126, 0.18), transparent 34%),
+        linear-gradient(135deg, #f8fafc, #eef6f4);
+    }
+
+    .card {
+      width: min(100%, 720px);
+      padding: clamp(30px, 7vw, 58px);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 30px;
+      background: #ffffff;
+      box-shadow: 0 28px 80px rgba(15, 23, 42, 0.13);
+      text-align: center;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+      color: #0f172a;
+      font-weight: 900;
+    }
+
+    .brand-logo {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      color: #ffffff;
+      background: #128c7e;
+      box-shadow: 0 12px 28px rgba(18, 140, 126, 0.24);
+    }
+
+    .check {
+      display: grid;
+      place-items: center;
+      width: 78px;
+      height: 78px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      color: #ffffff;
+      background: #128c7e;
+      font-size: 2.4rem;
+      font-weight: 900;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.08;
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 590px;
+      color: #475569;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 58px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .whatsapp { color: #ffffff; background: #128c7e; }
+    .home { color: #0f172a; background: #e2e8f0; }
+
+    @media (max-width: 620px) {
+      .actions { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKNN2KNC"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <main class="card">
+    <div class="brand"><span class="brand-logo">JG</span> JG Planos de Saúde</div>
+    <div class="check" aria-hidden="true">✓</div>
+    <h1>Solicitação recebida!</h1>
+    <p>Obrigado por enviar seus dados. Gerry Dias analisará as informações e entrará em contato pelo seu WhatsApp ou e-mail.</p>
+    <div class="actions">
+      <a class="button whatsapp" href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Acabei%20de%20enviar%20uma%20solicitação%20de%20cotação%20pelo%20site." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a class="button home" href="index.html">Voltar ao site</a>
+    </div>
+  </main>
+</body>
+</html>
