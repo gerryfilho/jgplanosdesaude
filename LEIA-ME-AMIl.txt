@@ -1,0 +1,9 @@
+PÁGINA AMIL ATUALIZADA
+
+1. Esta pasta contém o site completo, com a página amil.html atualizada.
+2. O arquivo amil-rede-hospitalar-completa.pdf contém as páginas integrais da rede hospitalar da cotação (páginas 3 a 13).
+3. Para publicar, envie os arquivos mantendo a estrutura de pastas para o mesmo repositório do site.
+4. A página inicial e as demais páginas foram preservadas.
+5. A tabela sem coparticipação foi mantida com os valores que já estavam no site, pois o novo PDF enviado só apresenta preços para Coparticipação 30.
+6. A nova tabela com coparticipação e a tabela de regras de coparticipação foram transcritas do PDF recebido.
+7. Os preços do documento são válidos até 08/11/2026 e devem ser confirmados antes da contratação.
