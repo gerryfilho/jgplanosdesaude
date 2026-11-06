@@ -1,16 +1,106 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sobre Gerry Dias | JG Planos de Saúde</title><meta name="description" content="Conheça Gerry Dias, corretor de planos de saúde empresariais, com foco em MEI, CNPJ e proteção familiar."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="hero-hospitais.css"><link rel="stylesheet" href="responsive.css"><link rel="stylesheet" href="paginas.css"></head><body><header class="topbar"><div class="container nav">
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sobre Gerry Dias | JG Planos de Saúde</title><meta name="description" content="Conheça Gerry Dias, corretor de planos de saúde empresariais há mais de quatro anos, com atendimento consultivo e acompanhamento mensal para clientes MEI e CNPJ."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="hero-hospitais.css"><link rel="stylesheet" href="responsive.css"><link rel="stylesheet" href="paginas.css">
+<style>
+.about-page{padding:54px 0 72px;background:linear-gradient(180deg,#f7f9fd 0%,#fff 55%)}
+.about-page .container{width:min(1120px,calc(100% - 40px));margin:auto}
+.about-hero{display:grid;grid-template-columns:.82fr 1.18fr;gap:48px;align-items:center;padding:34px;border:1px solid #e7ebf3;border-radius:26px;background:#fff;box-shadow:0 18px 50px rgba(22,43,88,.07)}
+.about-photo{overflow:hidden;border-radius:21px;background:#edf1f8;box-shadow:0 12px 30px rgba(18,38,78,.10)}
+.about-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center}
+.about-text .section-label,.about-eyebrow{color:#d66b2b;font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.about-text h1{margin:10px 0 16px;color:#142e70;font-size:clamp(34px,5vw,52px);line-height:1.04;letter-spacing:-.05em}
+.about-text p{color:#58677e;font-size:14px;line-height:1.85}
+.about-text .lead{color:#263b61;font-size:17px;font-weight:600;line-height:1.65}
+.about-highlights{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}
+.about-highlights span{padding:9px 12px;border:1px solid #e0e8f7;border-radius:99px;background:#f4f7fd;color:#23428b;font-size:11px;font-weight:800}
+.about-checks{display:grid;gap:10px;margin-top:20px}
+.about-checks span{display:flex;gap:10px;align-items:flex-start;color:#354660;font-size:13px;line-height:1.6}
+.about-checks b{color:#159b70}
+.about-section{padding:62px 0 0}
+.about-section-heading{max-width:760px;margin:0 auto 27px;text-align:center}
+.about-section-heading span{color:#d66b2b;font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.about-section-heading h2{margin:9px 0;color:#142e70;font-size:clamp(27px,4vw,38px);letter-spacing:-.045em}
+.about-section-heading p{margin:0;color:#68768b;font-size:13px;line-height:1.8}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service-card{padding:23px;border:1px solid #e6ebf3;border-radius:18px;background:#fff;box-shadow:0 8px 25px rgba(20,45,100,.04)}
+.service-icon{display:grid;place-items:center;width:42px;height:42px;margin-bottom:16px;border-radius:13px;background:#edf3ff;color:#2149a8;font-size:19px;font-weight:900}
+.service-card h3{margin:0 0 8px;color:#18377f;font-size:16px}
+.service-card p{margin:0;color:#66748a;font-size:12px;line-height:1.75}
+.monthly-panel{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;margin-top:18px;padding:28px;border:1px solid #dce6f8;border-radius:20px;background:linear-gradient(120deg,#f0f5ff,#fff)}
+.monthly-panel h3{margin:0 0 8px;color:#183b91;font-size:21px;letter-spacing:-.03em}
+.monthly-panel p{margin:0;color:#5f6e84;font-size:12px;line-height:1.8}
+.monthly-steps{display:grid;gap:11px}
+.monthly-step{display:flex;gap:11px;align-items:flex-start;padding:12px;border:1px solid #e3eaf7;border-radius:13px;background:#fff;color:#41516a;font-size:12px;line-height:1.6}
+.monthly-step strong{display:block;color:#1c3f91}
+.experience-band{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.experience-item{padding:20px;border-radius:16px;background:#153b9c;color:#fff;text-align:center}
+.experience-item strong{display:block;font-size:25px;letter-spacing:-.04em}
+.experience-item span{display:block;margin-top:5px;color:rgba(255,255,255,.83);font-size:11px;line-height:1.5}
+.about-final{display:flex;justify-content:space-between;align-items:center;gap:22px;margin-top:60px;padding:29px;border-radius:21px;background:linear-gradient(120deg,#12328f,#1d51c1);color:#fff}
+.about-final h2{margin:0 0 7px;color:#fff;font-size:23px;letter-spacing:-.03em}
+.about-final p{margin:0;color:rgba(255,255,255,.84);font-size:12px;line-height:1.7}
+.about-final .btn{flex:0 0 auto;background:#19c979;color:#fff}
+@media(max-width:800px){.about-hero{grid-template-columns:1fr;gap:25px;padding:22px}.about-photo{max-width:380px;margin:auto}.service-grid{grid-template-columns:1fr 1fr}.monthly-panel{grid-template-columns:1fr}}
+@media(max-width:560px){.about-page{padding:24px 0 50px}.about-page .container{width:calc(100% - 28px)}.service-grid{grid-template-columns:1fr}.experience-band{gap:7px}.experience-item{padding:15px 7px}.experience-item strong{font-size:20px}.experience-item span{font-size:10px}.about-final{align-items:flex-start;flex-direction:column;padding:23px}.about-final .btn{width:100%}}
+</style>
+
+</head><body><header class="topbar"><div class="container nav">
 <a class="brand" href="index.html" aria-label="JG Planos de Saúde"><img class="brand-logo-img" src="imagens/logo-jg-header.png" alt="Logomarca JG Planos de Saúde"><span><strong>JG Planos de Saúde</strong><small>Empresarial familiar com CNPJ</small></span></a>
 <nav class="menu" aria-label="Menu principal">
 <a href="index.html">Início</a><a href="unimed.html">Seguros Unimed</a><a href="sulamerica.html">SulAmérica</a><a href="bradesco.html">Bradesco</a><a href="amil.html">Amil</a><a href="hapvida.html">Hapvida</a><a href="sobre.html">Sobre Gerry</a>
-</nav><a class="btn btn-whatsapp btn-small" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20plano%20empresarial%20familiar." target="_blank" rel="noopener">WhatsApp</a></div></header><main><section class="about section-padding" id="sobre">
-<div class="container about-grid">
-<div class="about-photo"><img alt="Gerry Dias, corretor especializado em planos empresariais" src="imagens/gerry-sobre.jpeg"/></div>
-<div class="about-text">
-<span class="section-label">Sobre o corretor</span>
-<h1>Gerry Dias</h1>
-<p>Corretor de Planos de Saúde com foco em planos empresariais familiares. Bacharel em Administração de Empresas pela UFC, com conhecimento em contratos, normas e leis da ANS.</p>
-<p>Meu objetivo é orientar empresários, MEIs e famílias com CNPJ a escolherem a melhor solução entre as principais operadoras, com clareza e suporte antes e depois da contratação.</p>
-<div class="check-list"><span>✓ Atendimento consultivo</span><span>✓ Comparação entre operadoras</span><span>✓ Suporte pós-venda</span></div>
+</nav><a class="btn btn-whatsapp btn-small" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20plano%20empresarial%20familiar." target="_blank" rel="noopener">WhatsApp</a></div></header><main class="about-page">
+<div class="container">
+<section class="about-hero" id="sobre">
+  <div class="about-photo"><img alt="Gerry Dias, corretor especializado em planos empresariais" src="imagens/gerry-sobre.jpeg"/></div>
+  <div class="about-text">
+    <span class="section-label">Sobre o corretor</span>
+    <h1>Gerry Dias</h1>
+    <p class="lead">Mais do que apresentar planos, meu trabalho é acompanhar empresas e famílias em cada etapa da relação com o plano de saúde.</p>
+    <p>Sou corretor de planos de saúde, com atuação há mais de quatro anos exclusivamente no segmento empresarial. Meu foco é ajudar MEIs e empresas a entenderem as opções disponíveis e escolherem uma contratação coerente com suas necessidades, seu perfil e seu orçamento.</p>
+    <p>Sou Bacharel em Administração de Empresas pela Universidade Federal do Ceará (UFC) e tenho conhecimento das regras de contratação, características dos produtos, condições contratuais e normas aplicáveis às operadoras com as quais trabalho.</p>
+    <div class="about-highlights"><span>+4 anos no segmento empresarial</span><span>Formação em Administração – UFC</span><span>Atendimento consultivo</span></div>
+    <div class="about-checks">
+      <span><b>✓</b> Análise e comparação entre operadoras e modalidades.</span>
+      <span><b>✓</b> Orientação sobre regras de contratação, elegibilidade e condições dos planos.</span>
+      <span><b>✓</b> Acompanhamento próximo também depois da implantação do contrato.</span>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-section-heading">
+    <span>Meu jeito de trabalhar</span>
+    <h2>Atendimento consultivo, antes e depois da contratação</h2>
+    <p>A escolha do plano é só o começo. Meu compromisso é manter um relacionamento próximo com o cliente e oferecer suporte contínuo para que ele tenha mais tranquilidade na administração do benefício.</p>
+  </div>
+  <div class="service-grid">
+    <article class="service-card"><div class="service-icon">01</div><h3>Análise personalizada</h3><p>Entendo o perfil da empresa, a composição familiar, as necessidades de atendimento e o orçamento para apresentar alternativas compatíveis.</p></article>
+    <article class="service-card"><div class="service-icon">02</div><h3>Conhecimento das operadoras</h3><p>Oriento sobre diferenças entre produtos, regras comerciais, elegibilidade, coberturas, carências e condições contratuais das operadoras com as quais atuo.</p></article>
+    <article class="service-card"><div class="service-icon">03</div><h3>Acompanhamento contínuo</h3><p>O relacionamento não termina na venda. Mantenho contato com os clientes e continuo disponível para orientar e ajudar nas demandas do plano.</p></article>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="monthly-panel">
+    <div>
+      <span class="about-eyebrow">Suporte mensal</span>
+      <h3>Todo mês, continuo presente.</h3>
+      <p>Faço o acompanhamento mensal dos meus clientes e encaminho o boleto do plano a cada mês, ajudando a manter a rotina de pagamento organizada. Também permaneço disponível para dúvidas e orientações relacionadas ao contrato e ao atendimento da operadora.</p>
+    </div>
+    <div class="monthly-steps">
+      <div class="monthly-step"><span>✓</span><div><strong>Envio mensal do boleto</strong>Encaminhamento do boleto aos clientes a cada mês.</div></div>
+      <div class="monthly-step"><span>✓</span><div><strong>Acompanhamento próximo</strong>Contato e suporte contínuo, não apenas no momento da venda.</div></div>
+      <div class="monthly-step"><span>✓</span><div><strong>Orientação quando necessário</strong>Ajuda para compreender regras, procedimentos e questões do plano.</div></div>
+    </div>
+  </div>
+  <div class="experience-band">
+    <div class="experience-item"><strong>+4 anos</strong><span>De experiência em planos de saúde empresariais</span></div>
+    <div class="experience-item"><strong>Mensal</strong><span>Acompanhamento e envio de boleto aos clientes</span></div>
+    <div class="experience-item"><strong>Consultivo</strong><span>Suporte antes, durante e depois da contratação</span></div>
+  </div>
+</section>
+
+<section class="about-final">
+  <div><h2>Conte comigo para cuidar do seu plano empresarial.</h2><p>Se você tem MEI ou CNPJ, posso ajudar a comparar opções e acompanhar você também depois da contratação.</p></div>
+  <a class="btn btn-primary" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20conhecer%20seu%20trabalho%20consultivo%20e%20receber%20uma%20cota%C3%A7%C3%A3o%20de%20plano%20empresarial." target="_blank" rel="noopener">Falar com Gerry pelo WhatsApp</a>
+</section>
 </div>
-</div>
-</section><section class="section-padding"><div class="container"><div class="analysis-box"><div><h3>Vamos encontrar um plano para sua família?</h3><p>Fale comigo para comparar opções empresariais disponíveis para MEI e CNPJ.</p></div><a class="btn btn-primary" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20conversar%20sobre%20um%20plano%20empresarial." target="_blank" rel="noopener">Falar pelo WhatsApp</a></div></div></section></main><footer class="footer"><div class="container footer-grid"><div><strong>JG Planos de Saúde</strong><p>Gerry Dias – Corretor de Planos de Saúde</p></div><div><p>WhatsApp: (71) 98118-1395</p><p><a href="mailto:planosdesaudejg@gmail.com">planosdesaudejg@gmail.com</a></p><p><a href="index.html">Voltar à página inicial</a></p></div></div></footer></body></html>
+</main><footer class="footer"><div class="container footer-grid"><div><strong>JG Planos de Saúde</strong><p>Gerry Dias – Corretor de Planos de Saúde</p></div><div><p>WhatsApp: (71) 98118-1395</p><p><a href="mailto:planosdesaudejg@gmail.com">planosdesaudejg@gmail.com</a></p><p><a href="index.html">Voltar à página inicial</a></p></div></div></footer></body></html>

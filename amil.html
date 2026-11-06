@@ -1,27 +1,148 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Amil Empresarial | JG Planos de Saúde</title><meta name="description" content="Conheça opções de Amil empresarial para MEI e CNPJ. Compare planos, valores e rede credenciada com Gerry Dias, corretor de planos de saúde."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="hero-hospitais.css"><link rel="stylesheet" href="responsive.css"><link rel="stylesheet" href="paginas.css"></head><body><header class="topbar"><div class="container nav">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amil Empresarial | JG Planos de Saúde</title>
+<meta name="description" content="Conheça os benefícios dos planos Amil empresariais: rede nacional, custo-benefício, telemedicina, reembolso, Amil Dental e opções para diferentes perfis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hero-hospitais.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="paginas.css">
+<style>
+:root{--amil:#4a16d8;--amil2:#6c35ed;--amil-blue:#1475df;--amil-cyan:#10b8c7;--ink:#17233d;--muted:#68758b;--line:#e8e8f1;--soft:#f7f5ff}
+body{background:#fafaff;color:var(--ink)}
+.amil-page{padding:38px 0 76px}
+.amil-wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+.amil-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:clamp(30px,5vw,62px);border-radius:30px;background:radial-gradient(circle at 85% 10%,rgba(16,184,199,.38),transparent 28%),linear-gradient(125deg,#241078 0%,#4a16d8 55%,#1475df 100%);color:#fff;box-shadow:0 24px 65px rgba(54,26,151,.19)}
+.amil-hero:after{content:"";position:absolute;width:390px;height:390px;right:-150px;bottom:-260px;border:1px solid rgba(255,255,255,.22);border-radius:50%;box-shadow:0 0 0 34px rgba(255,255,255,.045),0 0 0 75px rgba(255,255,255,.03)}
+.amil-kicker{display:inline-flex;padding:8px 13px;border:1px solid rgba(255,255,255,.28);border-radius:99px;background:rgba(255,255,255,.1);font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.amil-hero h1{max-width:680px;margin:19px 0 16px;color:#fff;font-size:clamp(36px,5vw,59px);line-height:1.03;letter-spacing:-.055em}
+.amil-hero p{max-width:620px;margin:0;color:rgba(255,255,255,.87);font-size:16px;line-height:1.8}
+.amil-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:23px}
+.amil-chips span{padding:9px 12px;border:1px solid rgba(255,255,255,.2);border-radius:99px;background:rgba(255,255,255,.12);font-size:12px;font-weight:700}
+.amil-hero-card{position:relative;z-index:1;max-width:360px;margin:auto;padding:30px;border:1px solid rgba(255,255,255,.55);border-radius:25px;background:#fff;color:var(--ink);box-shadow:0 24px 60px rgba(14,7,58,.22);text-align:center}
+.amil-hero-card img{width:190px;height:80px;object-fit:contain}
+.amil-hero-card strong{display:block;margin-top:12px;color:#3c18bb;font-size:17px}
+.amil-hero-card small{display:block;margin-top:8px;color:var(--muted);font-size:12px;line-height:1.6}
+.amil-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 55px}
+.amil-trust article{padding:20px;border:1px solid var(--line);border-radius:18px;background:#fff;text-align:center}
+.amil-trust strong{display:block;color:var(--amil);font-size:20px;letter-spacing:-.03em}
+.amil-trust span{display:block;margin-top:6px;color:var(--muted);font-size:12px;line-height:1.5}
+.amil-head{text-align:center;max-width:780px;margin:0 auto 27px}
+.amil-eyebrow{color:#5a31d6;font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.amil-head h2{margin:10px 0;color:#20134f;font-size:clamp(28px,4vw,42px);line-height:1.12;letter-spacing:-.045em}
+.amil-head p{margin:0;color:var(--muted);font-size:14px;line-height:1.75}
+.amil-lines{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:58px}
+.amil-line{padding:25px;border:1px solid var(--line);border-radius:21px;background:#fff;box-shadow:0 10px 28px rgba(35,22,92,.045)}
+.amil-line.black{background:linear-gradient(145deg,#171522,#30264a);border-color:#30264a;color:#fff}
+.amil-line .tag{display:inline-flex;padding:6px 10px;border-radius:99px;background:#f0ebff;color:#5429d4;font-size:10px;font-weight:900;letter-spacing:.07em;text-transform:uppercase}
+.amil-line.black .tag{background:rgba(255,255,255,.13);color:#e6ddff}
+.amil-line h3{margin:14px 0 8px;color:#29145f;font-size:22px;letter-spacing:-.035em}
+.amil-line.black h3{color:#fff}
+.amil-line p{margin:0;color:var(--muted);font-size:13px;line-height:1.7}
+.amil-line.black p{color:rgba(255,255,255,.76)}
+.amil-line ul{display:grid;gap:9px;margin:18px 0 0;padding:0;list-style:none}
+.amil-line li{display:flex;gap:9px;color:#40516a;font-size:12px;line-height:1.55}
+.amil-line.black li{color:rgba(255,255,255,.86)}
+.amil-line li:before{content:"✓";color:#12a88a;font-weight:900}
+.amil-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:26px 0 58px}
+.amil-benefit{padding:22px;border:1px solid var(--line);border-radius:19px;background:#fff;box-shadow:0 8px 24px rgba(35,22,92,.035)}
+.amil-icon{display:grid;place-items:center;width:42px;height:42px;margin-bottom:14px;border-radius:13px;background:#f0ebff;color:#5528d4;font-size:19px;font-weight:900}
+.amil-benefit h3{margin:0 0 8px;color:#28165e;font-size:15px}
+.amil-benefit p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}
+.amil-dental{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px;align-items:center;margin:0 0 58px;padding:clamp(25px,4vw,42px);border:1px solid #ded5ff;border-radius:25px;background:linear-gradient(130deg,#f0ebff,#f2fbff)}
+.amil-dental h2{margin:9px 0 11px;color:#28165e;font-size:clamp(26px,3.5vw,36px);letter-spacing:-.04em}
+.amil-dental p{margin:0;color:#5d6680;font-size:13px;line-height:1.75}
+.amil-dental-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.amil-dental-list span{padding:13px;border:1px solid #e4ddfa;border-radius:13px;background:#fff;color:#38246d;font-size:12px;font-weight:700}
+.amil-network{padding:30px;border:1px solid var(--line);border-radius:23px;background:#fff;margin-bottom:58px}
+.amil-network h2{margin:0 0 8px;color:#21144e;font-size:25px;letter-spacing:-.035em}
+.amil-network>p{margin:0 0 20px;color:var(--muted);font-size:13px;line-height:1.7}
+.amil-hospitals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.amil-hospitals span{padding:13px 15px;border-radius:12px;background:#f7f5ff;color:#3a2b68;font-size:12px;font-weight:700}
+.amil-note{max-width:970px;margin:0 auto 22px;color:#778195;font-size:11px;line-height:1.7;text-align:center}
+.amil-cta{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:30px;border-radius:22px;background:linear-gradient(120deg,#2c137e,#4b1bd4 60%,#1475df);color:#fff}
+.amil-cta h2{margin:0 0 7px;color:#fff;font-size:24px;letter-spacing:-.03em}
+.amil-cta p{margin:0;color:rgba(255,255,255,.82);font-size:13px;line-height:1.6}
+.amil-cta .btn{flex:0 0 auto;background:#19c979;color:#fff}
+@media(max-width:850px){.amil-hero,.amil-dental{grid-template-columns:1fr}.amil-lines{grid-template-columns:1fr 1fr}.amil-benefits{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.amil-page{padding-top:22px}.amil-wrap{width:calc(100% - 28px)}.amil-hero{padding:27px 21px;border-radius:23px}.amil-hero p{font-size:14px}.amil-hero-card{padding:23px}.amil-trust{gap:8px;margin-bottom:42px}.amil-trust article{padding:14px 8px}.amil-trust strong{font-size:16px}.amil-trust span{font-size:10px}.amil-lines,.amil-benefits{grid-template-columns:1fr}.amil-line{padding:22px}.amil-dental-list,.amil-hospitals{grid-template-columns:1fr}.amil-network{padding:22px}.amil-cta{align-items:flex-start;flex-direction:column;padding:24px}.amil-cta .btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="container nav">
 <a class="brand" href="index.html" aria-label="JG Planos de Saúde"><img class="brand-logo-img" src="imagens/logo-jg-header.png" alt="Logomarca JG Planos de Saúde"><span><strong>JG Planos de Saúde</strong><small>Empresarial familiar com CNPJ</small></span></a>
-<nav class="menu" aria-label="Menu principal">
-<a href="index.html">Início</a><a href="unimed.html">Seguros Unimed</a><a href="sulamerica.html">SulAmérica</a><a href="bradesco.html">Bradesco</a><a href="amil.html">Amil</a><a href="hapvida.html">Hapvida</a><a href="sobre.html">Sobre Gerry</a>
-</nav><a class="btn btn-whatsapp btn-small" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20plano%20empresarial%20familiar." target="_blank" rel="noopener">WhatsApp</a></div></header><main><section class="operators section-padding"><div class="container">
-<span class="section-label">Planos empresariais para MEI e CNPJ</span>
-<h1 class="tables-heading">Amil</h1>
-<p class="intro">Planos empresariais Amil para MEI e CNPJ. Compare as opções, valores e redes de atendimento apresentadas nesta página. A composição da rede pode variar conforme o produto e a contratação.</p>
-<div class="operator-grid"><article class="amil-comparison operator-anchor" id="tabela-amil">
-<div class="amil-title"><div><img alt="Amil" src="imagens/amil.png"/><h3>Amil sem coparticipação</h3><p>Consultas, exames, procedimentos e internações sem coparticipação. Coparticipação cobrada apenas em terapias.</p><span class="minimum-lives">A partir de 2 vidas</span></div><span class="amil-badge">SEM COPARTICIPAÇÃO</span></div>
-<div aria-label="Tabela Amil sem coparticipação, com cobrança apenas em terapias" class="hapvida-table-wrap" role="region" tabindex="0"><table class="hapvida-table amil-table"><thead><tr><th>Faixa etária</th><th>Prata<span class="plan-subtitle">Enfermaria · Nacional</span></th><th>Ouro<span class="plan-subtitle">Enfermaria · Nacional</span></th><th>Platinum R1<span class="plan-subtitle">Apartamento · Nacional</span></th><th>S380<span class="plan-subtitle">Enfermaria · Nacional</span></th><th>S750 R1<span class="plan-subtitle">Apartamento · Nacional</span></th></tr></thead><tbody>
-<tr><td>0 a 18 anos</td><td>R$ 377,58</td><td>R$ 416,57</td><td>R$ 515,17</td><td>R$ 445,07</td><td>R$ 589,04</td></tr><tr><td>19 a 23 anos</td><td>R$ 441,77</td><td>R$ 487,38</td><td>R$ 602,75</td><td>R$ 520,73</td><td>R$ 689,18</td></tr><tr><td>24 a 28 anos</td><td>R$ 538,96</td><td>R$ 594,61</td><td>R$ 735,36</td><td>R$ 635,30</td><td>R$ 840,79</td></tr><tr><td>29 a 33 anos</td><td>R$ 646,75</td><td>R$ 713,53</td><td>R$ 882,43</td><td>R$ 762,36</td><td>R$ 1.008,95</td></tr><tr><td>34 a 38 anos</td><td>R$ 679,08</td><td>R$ 749,21</td><td>R$ 926,56</td><td>R$ 800,48</td><td>R$ 1.059,40</td></tr><tr><td>39 a 43 anos</td><td>R$ 746,99</td><td>R$ 824,13</td><td>R$ 1.019,22</td><td>R$ 880,52</td><td>R$ 1.165,34</td></tr><tr><td>44 a 48 anos</td><td>R$ 933,74</td><td>R$ 1.030,16</td><td>R$ 1.274,02</td><td>R$ 1.100,66</td><td>R$ 1.456,68</td></tr><tr><td>49 a 53 anos</td><td>R$ 1.027,11</td><td>R$ 1.133,18</td><td>R$ 1.401,43</td><td>R$ 1.210,73</td><td>R$ 1.602,35</td></tr><tr><td>54 a 58 anos</td><td>R$ 1.283,89</td><td>R$ 1.416,47</td><td>R$ 1.751,79</td><td>R$ 1.513,41</td><td>R$ 2.002,94</td></tr><tr><td>59 anos ou mais</td><td>R$ 2.246,82</td><td>R$ 2.478,83</td><td>R$ 3.065,63</td><td>R$ 2.648,47</td><td>R$ 3.505,14</td></tr>
-</tbody></table></div>
-<div class="therapy-note"><strong>Coparticipação parcial TP</strong>Coparticipação cobrada apenas em terapias. Consultas, pronto-socorro, exames, procedimentos e internações não possuem cobrança de coparticipação.</div>
-<div class="amil-network"><div class="amil-plan"><strong>Prata</strong><em>Hospitais selecionados</em><span>Hospital Mater Dei</span><span>Hospital Santa Izabel</span><span>Hospital Jorge Valente</span><span>Hospital da Bahia</span><span>Hospital Santo Amaro</span></div><div class="amil-plan"><strong>Ouro</strong><em>Hospitais selecionados</em><span>Hospital Mater Dei</span><span>Hospital Português</span><span>Hospital Santa Izabel</span><span>Hospital Jorge Valente</span><span>Hospital da Bahia</span></div><div class="amil-plan"><strong>Platinum R1</strong><em>Hospitais selecionados</em><span>Hospital Mater Dei</span><span>Hospital Português</span><span>Hospital Santa Izabel</span><span>Hospital Jorge Valente</span><span>Hospital da Bahia</span></div><div class="amil-plan"><strong>S380</strong><em>Hospitais selecionados</em><span>Hospital Mater Dei</span><span>Hospital Santa Izabel</span><span>Hospital Jorge Valente</span><span>Hospital da Bahia</span><span>Hospital Aeroporto - Lauro de Freitas</span></div><div class="amil-plan"><strong>S750 R1</strong><em>Hospitais selecionados</em><span>Hospital Aliança</span><span>Hospital São Rafael</span><span>Hospital Mater Dei</span><span>Hospital Português</span><span>Hospital Cardiopulmonar</span></div></div>
-<div class="platinum-highlight"><strong>⭐ Platinum R1: Hospital Sírio-Libanês em São Paulo</strong><span>O plano Platinum R1 possui cobertura no Hospital Sírio-Libanês, em São Paulo, conforme a rede contratual e as regras de atendimento do produto.</span></div><a class="hapvida-cta" href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Vi%20a%20tabela%20da%20Amil%20sem%20coparticipação%20e%20quero%20uma%20cotação." rel="noopener" target="_blank">Solicitar cotação Amil</a>
-</article><article class="amil-comparison with-copay">
-<div class="amil-title"><div><img alt="Amil" src="imagens/amil.png"/><h3>Amil com coparticipação</h3><p>Cinco opções nacionais com mensalidades reduzidas e limites por utilização.</p><span class="minimum-lives">A partir de 2 vidas</span></div><span class="amil-badge">COM COPARTICIPAÇÃO</span></div>
-<div aria-label="Tabela Amil com coparticipação" class="hapvida-table-wrap" role="region" tabindex="0"><table class="hapvida-table amil-table"><thead><tr><th>Faixa etária</th><th>Prata<span class="plan-subtitle">Apartamento · Nacional</span></th><th>Ouro<span class="plan-subtitle">Enfermaria · Parcial terapias</span></th><th>Platinum R1<span class="plan-subtitle">Apartamento · Nacional</span></th><th>S380<span class="plan-subtitle">Enfermaria · Nacional</span></th><th>S750 R1<span class="plan-subtitle">Apartamento · Nacional</span></th></tr></thead><tbody>
-<tr><td>0 a 18 anos</td><td>R$ 314,33</td><td>R$ 416,57</td><td>R$ 386,39</td><td>R$ 333,81</td><td>R$ 441,79</td></tr><tr><td>19 a 23 anos</td><td>R$ 367,76</td><td>R$ 487,38</td><td>R$ 452,07</td><td>R$ 390,56</td><td>R$ 516,90</td></tr><tr><td>24 a 28 anos</td><td>R$ 448,67</td><td>R$ 594,61</td><td>R$ 551,54</td><td>R$ 476,48</td><td>R$ 630,62</td></tr><tr><td>29 a 33 anos</td><td>R$ 538,41</td><td>R$ 713,53</td><td>R$ 661,84</td><td>R$ 571,78</td><td>R$ 756,74</td></tr><tr><td>34 a 38 anos</td><td>R$ 565,33</td><td>R$ 749,21</td><td>R$ 694,94</td><td>R$ 600,36</td><td>R$ 794,58</td></tr><tr><td>39 a 43 anos</td><td>R$ 621,86</td><td>R$ 824,13</td><td>R$ 764,43</td><td>R$ 660,40</td><td>R$ 874,04</td></tr><tr><td>44 a 48 anos</td><td>R$ 777,33</td><td>R$ 1.030,16</td><td>R$ 955,54</td><td>R$ 825,50</td><td>R$ 1.092,56</td></tr><tr><td>49 a 53 anos</td><td>R$ 855,07</td><td>R$ 1.133,18</td><td>R$ 1.051,09</td><td>R$ 908,04</td><td>R$ 1.201,81</td></tr><tr><td>54 a 58 anos</td><td>R$ 1.068,84</td><td>R$ 1.416,47</td><td>R$ 1.313,87</td><td>R$ 1.135,06</td><td>R$ 1.502,26</td></tr><tr><td>59 anos ou mais</td><td>R$ 1.870,46</td><td>R$ 2.478,83</td><td>R$ 2.299,27</td><td>R$ 1.986,36</td><td>R$ 2.628,96</td></tr>
-</tbody></table></div>
-<div class="amil-network"><div class="amil-plan"><strong>Prata</strong><em>Hospitais selecionados</em><span>Hospital Mater Dei</span><span>Hospital Santa Izabel</span><span>Hospital Jorge Valente</span><span>Hospital da Bahia</span><span>Hospital Santo Amaro</span></div><div class="amil-plan"><strong>Ouro</strong><em>Hospitais selecionados</em><span>Hospital Mater Dei</span><span>Hospital Português</span><span>Hospital Santa Izabel</span><span>Hospital Jorge Valente</span><span>Hospital da Bahia</span></div><div class="amil-plan"><strong>Platinum R1</strong><em>Hospitais selecionados</em><span>Hospital Mater Dei</span><span>Hospital Português</span><span>Hospital Santa Izabel</span><span>Hospital Jorge Valente</span><span>Hospital da Bahia</span></div><div class="amil-plan"><strong>S380</strong><em>Hospitais selecionados</em><span>Hospital Mater Dei</span><span>Hospital Santa Izabel</span><span>Hospital Jorge Valente</span><span>Hospital da Bahia</span><span>Hospital Aeroporto - Lauro de Freitas</span></div><div class="amil-plan"><strong>S750 R1</strong><em>Hospitais selecionados</em><span>Hospital Aliança</span><span>Hospital São Rafael</span><span>Hospital Mater Dei</span><span>Hospital Português</span><span>Hospital Cardiopulmonar</span></div></div>
-<div class="platinum-highlight"><strong>⭐ Platinum R1: Hospital Sírio-Libanês em São Paulo</strong><span>O plano Platinum R1 possui cobertura no Hospital Sírio-Libanês, em São Paulo, conforme a rede contratual e as regras de atendimento do produto.</span></div><a class="hapvida-cta" href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Vi%20a%20tabela%20da%20Amil%20com%20coparticipação%20e%20quero%20uma%20cotação." rel="noopener" target="_blank">Solicitar cotação Amil</a>
-</article></div>
-<div class="analysis-box"><div><h3>Quer comparar esta opção com outras operadoras?</h3><p>Posso ajudar a avaliar valores, hospitais, regras de inclusão familiar e custo-benefício para sua empresa.</p></div><a class="btn btn-primary" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20amil%20empresarial." target="_blank" rel="noopener">Solicitar cotação</a></div>
-<p class="tables-disclaimer">As informações e os valores são referenciais e devem ser confirmados na cotação atualizada. A rede credenciada está sujeita a alterações pela operadora.</p>
-</div></section></main><footer class="footer"><div class="container footer-grid"><div><strong>JG Planos de Saúde</strong><p>Gerry Dias – Corretor de Planos de Saúde</p></div><div><p>WhatsApp: (71) 98118-1395</p><p><a href="mailto:planosdesaudejg@gmail.com">planosdesaudejg@gmail.com</a></p><p><a href="index.html">Voltar à página inicial</a></p></div></div></footer><a class="floating-whatsapp" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o." aria-label="Abrir conversa no WhatsApp"><span aria-hidden="true">✆</span></a></body></html>
+<nav class="menu" aria-label="Menu principal"><a href="index.html">Início</a><a href="unimed.html">Seguros Unimed</a><a href="sulamerica.html">SulAmérica</a><a href="bradesco.html">Bradesco</a><a href="amil.html">Amil</a><a href="hapvida.html">Hapvida</a><a href="sobre.html">Sobre Gerry</a></nav>
+<a class="btn btn-whatsapp btn-small" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20conhecer%20os%20planos%20Amil." target="_blank" rel="noopener">WhatsApp</a>
+</div></header>
+
+<main class="amil-page"><div class="amil-wrap">
+<section class="amil-hero">
+<div><span class="amil-kicker">Amil Empresarial · PME</span>
+<h1>Boa cobertura, bons hospitais e excelente custo-benefício.</h1>
+<p>Planos Amil para empresas que buscam equilíbrio entre qualidade assistencial e economia. São diferentes linhas nacionais, com acesso a hospitais, clínicas, laboratórios e serviços digitais, de acordo com o produto contratado.</p>
+<div class="amil-chips"><span>Rede nacional</span><span>Opções com coparticipação</span><span>Alternativas com reembolso</span><span>Opções com Amil Dental</span></div></div>
+<div class="amil-hero-card"><img src="imagens/amil.png" alt="Amil"><strong>Saúde de qualidade com escolhas para cada perfil</strong><small>Conheça as linhas Amil PME e encontre a combinação de rede, acomodação e benefícios adequada à sua empresa.</small></div>
+</section>
+
+<section class="amil-trust" aria-label="Diferenciais Amil">
+<article><strong>Rede nacional</strong><span>Opções de cobertura em diferentes regiões do Brasil</span></article>
+<article><strong>Custo-benefício</strong><span>Linhas com diferentes níveis de rede e benefícios</span></article>
+<article><strong>Mais conveniência</strong><span>Telemedicina, serviços digitais e benefícios adicionais</span></article>
+</section>
+
+<section><div class="amil-head"><span class="amil-eyebrow">Linhas e opções</span><h2>Uma linha para cada necessidade</h2><p>O portfólio PME contempla opções de entrada, intermediárias e categorias superiores. A rede, a acomodação, a coparticipação e os serviços variam conforme a linha e a contratação.</p></div>
+<div class="amil-lines">
+<article class="amil-line"><span class="tag">Equilíbrio e economia</span><h3>Amil Prata</h3><p>Uma alternativa nacional com ampla rede credenciada nas principais cidades e foco em custo-benefício.</p><ul><li>Acomodação em enfermaria ou apartamento, conforme produto.</li><li>Opções de coparticipação total ou parcial.</li><li>Telemedicina Amil e descontos em farmácias.</li><li>Amil Espaço Saúde e Programa Primeiros Cuidados, conforme disponibilidade.</li><li>Transplantes adicionais em produtos elegíveis.</li></ul></article>
+<article class="amil-line"><span class="tag">Rede e reembolso</span><h3>Amil Ouro</h3><p>Uma opção para quem busca hospitais de referência e possibilidade de reembolso em consultas e honorários médicos.</p><ul><li>Abrangência nacional.</li><li>Enfermaria ou apartamento, conforme produto.</li><li>Coparticipação total ou parcial.</li><li>Reembolso conforme regras e limites do plano.</li><li>Telemedicina, descontos em farmácia e transplantes adicionais.</li></ul></article>
+<article class="amil-line"><span class="tag">Categoria superior</span><h3>Amil Platinum</h3><p>Uma linha nacional com acomodação em apartamento, opções de reembolso e acesso a hospitais renomados.</p><ul><li>Reembolso para consultas e honorários médicos.</li><li>Telemedicina e coleta domiciliar em produtos elegíveis.</li><li>Cirurgia refrativa sem limite de grau, conforme cobertura.</li><li>Retaguarda hospitalar em instituições selecionadas.</li><li>Benefícios adicionais conforme a categoria.</li></ul></article>
+<article class="amil-line black"><span class="tag">Experiência premium</span><h3>Amil Black</h3><p>Produtos voltados a quem procura uma experiência diferenciada, rede de excelência e benefícios especiais.</p><ul><li>Rede nacional e acomodação em apartamento.</li><li>Reembolso para consultas, honorários e terapias, conforme produto.</li><li>Telemedicina Amil Black e Amil Resgate.</li><li>Espaço Amil Exclusivo e retaguarda em hospitais premium.</li><li>Assistência de viagem internacional.</li></ul></article>
+<article class="amil-line black"><span class="tag">Black II e S6500</span><h3>Benefícios exclusivos</h3><p>Nas categorias superiores Black II e S6500, o material destaca serviços e estruturas adicionais.</p><ul><li>Concierge exclusivo e Rede Exclusiva Black.</li><li>Check-up, conforme regras do produto.</li><li>Consulta domiciliar em localidades elegíveis.</li><li>Coleta domiciliar de exames e vacinas previstas.</li><li>Benefícios complementares e retaguarda premium.</li></ul></article>
+<article class="amil-line"><span class="tag">Linha selecionada</span><h3>S380, S450 e S750</h3><p>Alternativas nacionais que ampliam as possibilidades de escolha dentro do portfólio Amil.</p><ul><li>S380: Amil Espaço Saúde, reembolso e transplantes adicionais.</li><li>S450: maior capilaridade de rede e hospitais de excelência.</li><li>S750: mais níveis de reembolso e benefícios complementares.</li><li>Rede e serviços definidos por produto e região.</li></ul></article>
+</div></section>
+
+<section><div class="amil-head"><span class="amil-eyebrow">Benefícios assistenciais</span><h2>Mais cuidado no dia a dia</h2><p>Além da rede credenciada, determinados produtos Amil contam com recursos que ampliam a conveniência e o suporte ao beneficiário.</p></div>
+<div class="amil-benefits">
+<article class="amil-benefit"><div class="amil-icon">＋</div><h3>Telemedicina Amil</h3><p>Atendimento médico remoto, incluindo modalidades eletivas e de urgência conforme o produto.</p></article>
+<article class="amil-benefit"><div class="amil-icon">⌂</div><h3>Amil Espaço Saúde</h3><p>Estrutura de cuidado e acompanhamento em unidades disponíveis na área de abrangência do plano.</p></article>
+<article class="amil-benefit"><div class="amil-icon">♡</div><h3>Programa Primeiros Cuidados</h3><p>Orientação e suporte para necessidades de saúde, conforme os serviços previstos na linha contratada.</p></article>
+<article class="amil-benefit"><div class="amil-icon">↗</div><h3>Reembolso</h3><p>Possibilidade de reembolso em produtos elegíveis, respeitando limites, múltiplos e regras contratuais.</p></article>
+<article class="amil-benefit"><div class="amil-icon">✚</div><h3>Transplantes adicionais</h3><p>Produtos selecionados podem oferecer cobertura para transplantes além do rol obrigatório, conforme condições do plano.</p></article>
+<article class="amil-benefit"><div class="amil-icon">⌁</div><h3>Amil Resgate</h3><p>Atendimento pré-hospitalar e remoção especializada nos produtos e localidades previstos.</p></article>
+<article class="amil-benefit"><div class="amil-icon">⌖</div><h3>Coleta domiciliar</h3><p>Coleta de exames em domicílio por parceiros e nas regiões atendidas, conforme elegibilidade.</p></article>
+<article class="amil-benefit"><div class="amil-icon">✈</div><h3>Assistência em viagem</h3><p>Assistência para urgências e emergências em viagens internacionais nos produtos que oferecem o benefício.</p></article>
+<article class="amil-benefit"><div class="amil-icon">％</div><h3>Descontos em farmácias</h3><p>Condições especiais em redes e estabelecimentos parceiros, conforme regras vigentes.</p></article>
+<article class="amil-benefit"><div class="amil-icon">◎</div><h3>Check-up</h3><p>Benefício disponível em categorias selecionadas, mediante critérios e rede previstos no produto.</p></article>
+<article class="amil-benefit"><div class="amil-icon">★</div><h3>Concierge e rede Black</h3><p>Serviços diferenciados e acesso à rede exclusiva em categorias superiores da linha Amil Black.</p></article>
+<article class="amil-benefit"><div class="amil-icon">＋</div><h3>Benefícios complementares</h3><p>Alguns produtos incluem cirurgia refrativa, vacinas, RPG, hidroterapia e escleroterapia, conforme limites e condições.</p></article>
+</div></section>
+
+<section class="amil-dental">
+<div><span class="amil-eyebrow">Sorriso também é saúde</span><h2>Amil Dental pode acompanhar o plano médico.</h2><p>O material comercial apresenta condições promocionais de inclusão do plano odontológico em determinadas contratações PME. Há opções promocionais por período determinado e uma modalidade específica para o Amil Black II.</p></div>
+<div class="amil-dental-list"><span>Amil Dental promocional por 12 meses em produtos elegíveis</span><span>Amil Black Dental incluído no Amil Black II, conforme material comercial</span><span>Cobertura odontológica prevista no Rol da ANS</span><span>Rede odontológica em todo o Brasil</span><span>Sem coparticipação no Dental promocional indicado</span><span>Black Dental: próteses em cerâmica, implantes e tratamento ortodôntico</span></div>
+</section>
+
+<section class="amil-network">
+<span class="amil-eyebrow">Referências de rede no Nordeste</span><h2>Hospitais e clínicas de destaque</h2>
+<p>Os materiais PME de março e junho de 2026 citam instituições de referência em diferentes categorias. Os exemplos abaixo não significam que todos estejam disponíveis em todos os produtos: a rede depende da linha, da cidade e da versão contratada.</p>
+<div class="amil-hospitals">
+<span>Hospital Mater Dei — Bahia</span><span>Hospital Português — Bahia</span>
+<span>Hospital Jorge Valente — Bahia</span><span>COT — Bahia</span>
+<span>Monte Klinikum — Ceará</span><span>Hospital São Mateus — Ceará</span>
+<span>Hospital Santa Joana — Pernambuco</span><span>Real Hospital Português — Pernambuco</span>
+<span>Hospital Promater — Rio Grande do Norte</span><span>Hospital do Coração de Natal — Rio Grande do Norte</span>
+</div>
+</section>
+
+<p class="amil-note">Conteúdo elaborado com base nos materiais comerciais “Produtos Amil – Março/2026” e “Treinamento Produtos Amil PME – Junho/2026”. Benefícios, rede credenciada, acomodação, coparticipação, reembolso, serviços odontológicos e promoções variam conforme o produto, a região, o porte da empresa e as regras vigentes. A inclusão promocional do Dental pode ter prazo determinado e condições próprias; confirme a oferta disponível antes da contratação. A página não apresenta preços ou mensalidades.</p>
+
+<section class="amil-cta"><div><h2>Vamos encontrar a melhor opção Amil para sua empresa?</h2><p>Converse com Gerry Dias e conheça as alternativas de rede, benefícios e custo-benefício para seu CNPJ.</p></div><a class="btn" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20conhecer%20os%20benef%C3%ADcios%20dos%20planos%20Amil%20para%20minha%20empresa." target="_blank" rel="noopener">Solicitar orientação pelo WhatsApp</a></section>
+</div></main>
+
+<footer class="footer"><div class="container footer-grid"><div><strong>JG Planos de Saúde</strong><p>Gerry Dias – Corretor de Planos de Saúde</p></div><div><p>WhatsApp: (71) 98118-1395</p><p><a href="mailto:planosdesaudejg@gmail.com">planosdesaudejg@gmail.com</a></p><p><a href="index.html">Voltar à página inicial</a></p></div></div></footer>
+<a class="floating-whatsapp" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20conhecer%20os%20planos%20Amil." aria-label="Abrir conversa no WhatsApp"><span aria-hidden="true">✆</span></a>
+</body></html>

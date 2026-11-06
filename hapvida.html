@@ -1,45 +1,85 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Hapvida Empresarial | JG Planos de Saúde</title><meta name="description" content="Conheça opções de Hapvida empresarial para MEI e CNPJ. Compare planos, valores e rede credenciada com Gerry Dias, corretor de planos de saúde."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="hero-hospitais.css"><link rel="stylesheet" href="responsive.css"><link rel="stylesheet" href="paginas.css"></head><body><header class="topbar"><div class="container nav">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hapvida Empresarial | JG Planos de Saúde</title>
+<meta name="description" content="Conheça o Hapvida Empresarial: plano econômico com opções Ambulatorial e Nosso Plano, rede própria na Bahia e atendimento em hospitais, clínicas e unidades de diagnóstico.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="hero-hospitais.css"><link rel="stylesheet" href="responsive.css"><link rel="stylesheet" href="paginas.css">
+<style>
+:root{--hv-blue:#153eaa;--hv-blue2:#2354c8;--hv-orange:#f36b21;--hv-ink:#142344;--hv-muted:#66748a;--hv-line:#e5eaf3;--hv-bg:#f6f8fc}
+body{background:#fbfcff;color:var(--hv-ink)}
+.hv-page{padding:34px 0 72px}.hv-wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+.hv-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:clamp(30px,5vw,60px);border-radius:29px;background:radial-gradient(circle at 86% 8%,rgba(255,255,255,.18),transparent 26%),linear-gradient(125deg,#102e88,#1948bb 65%,#2467d1);color:#fff;box-shadow:0 24px 60px rgba(18,53,142,.18)}
+.hv-hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(255,255,255,.18);border-radius:50%;right:-150px;bottom:-230px;box-shadow:0 0 0 35px rgba(255,255,255,.04),0 0 0 75px rgba(255,255,255,.03)}
+.hv-kicker{display:inline-flex;padding:8px 13px;border-radius:99px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.hv-hero h1{margin:18px 0 15px;max-width:660px;color:#fff;font-size:clamp(36px,5vw,58px);line-height:1.04;letter-spacing:-.055em}
+.hv-hero p{max-width:610px;margin:0;color:rgba(255,255,255,.88);font-size:15px;line-height:1.8}
+.hv-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.hv-chips span{padding:9px 12px;border:1px solid rgba(255,255,255,.22);border-radius:99px;background:rgba(255,255,255,.11);font-size:11px;font-weight:800}
+.hv-brand-card{position:relative;z-index:1;max-width:340px;margin:auto;padding:27px;border:1px solid rgba(255,255,255,.5);border-radius:24px;background:#fff;color:var(--hv-ink);text-align:center;box-shadow:0 22px 55px rgba(7,24,76,.22)}
+.hv-brand-card img{width:185px;height:88px;object-fit:contain}.hv-brand-card strong{display:block;margin-top:9px;color:var(--hv-blue);font-size:16px}.hv-brand-card small{display:block;margin-top:8px;color:var(--hv-muted);font-size:11px;line-height:1.6}
+.hv-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:18px 0 54px}.hv-stat{padding:19px;border:1px solid var(--hv-line);border-radius:17px;background:#fff;text-align:center}.hv-stat strong{display:block;color:var(--hv-blue);font-size:20px;letter-spacing:-.03em}.hv-stat span{display:block;margin-top:5px;color:var(--hv-muted);font-size:11px;line-height:1.5}
+.hv-heading{text-align:center;max-width:780px;margin:0 auto 26px}.hv-eyebrow{color:var(--hv-orange);font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.hv-heading h2{margin:9px 0;color:#142c68;font-size:clamp(28px,4vw,41px);line-height:1.12;letter-spacing:-.045em}.hv-heading p{margin:0;color:var(--hv-muted);font-size:13px;line-height:1.75}
+.hv-plans{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-bottom:56px}.hv-plan{position:relative;overflow:hidden;padding:27px;border:1px solid var(--hv-line);border-radius:22px;background:#fff;box-shadow:0 10px 30px rgba(20,45,100,.05)}.hv-plan.full{border:2px solid #d7e3ff}.hv-plan .label{display:inline-flex;padding:7px 11px;border-radius:99px;background:#eef3ff;color:var(--hv-blue);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.hv-plan h3{margin:14px 0 8px;color:#173b9e;font-size:25px;letter-spacing:-.04em}.hv-plan p{margin:0;color:var(--hv-muted);font-size:13px;line-height:1.7}.hv-plan ul{display:grid;gap:11px;margin:19px 0 0;padding:0;list-style:none}.hv-plan li{display:flex;gap:9px;color:#34445f;font-size:12px;line-height:1.55}.hv-plan li:before{content:"✓";color:#159b70;font-weight:900}.hv-plan .not{margin-top:17px;padding:14px;border-radius:13px;background:#fff5ef;color:#9b4b1e;font-size:12px;line-height:1.6}.hv-plan.full .not{background:#eff7ff;color:#31558f}
+.hv-compare{overflow:hidden;margin:0 0 56px;border:1px solid var(--hv-line);border-radius:20px;background:#fff}.hv-compare h3{margin:0;padding:20px 23px;color:#183b9c;font-size:18px}.hv-table{width:100%;border-collapse:collapse}.hv-table th,.hv-table td{padding:15px 17px;border-top:1px solid var(--hv-line);text-align:left;font-size:12px;line-height:1.55}.hv-table th{background:#f1f5ff;color:#1d3f9d;font-weight:900}.hv-table td:first-child{font-weight:800;color:#253858}.hv-table td:not(:first-child){color:#506078}.hv-check{color:#159b70;font-weight:900}.hv-no{color:#d05b31;font-weight:800}
+.hv-network{margin-bottom:55px}.hv-network-intro{max-width:760px;margin:0 auto 24px;text-align:center;color:var(--hv-muted);font-size:13px;line-height:1.7}
+.hv-hospitals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.hv-hospital{overflow:hidden;border:1px solid var(--hv-line);border-radius:19px;background:#fff;box-shadow:0 8px 25px rgba(20,45,100,.045)}.hv-hospital img{display:block;width:100%;height:190px;object-fit:cover;background:#edf2fa}.hv-hospital div{padding:17px}.hv-hospital h3{margin:0 0 7px;color:#173b9e;font-size:15px}.hv-hospital p{margin:0;color:var(--hv-muted);font-size:11px;line-height:1.6}.hv-hospital .city{display:inline-block;margin-top:11px;padding:6px 9px;border-radius:99px;background:#eff3ff;color:#2348a5;font-size:10px;font-weight:800}
+.hv-cities{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin:22px 0 0}.hv-cities span{padding:9px 12px;border:1px solid var(--hv-line);border-radius:99px;background:#fff;color:#3d4d68;font-size:11px;font-weight:700}
+.hv-callout{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;margin-bottom:55px;padding:28px;border:1px solid #dce6fb;border-radius:21px;background:linear-gradient(125deg,#f0f5ff,#fff7f1)}.hv-callout h2{margin:0 0 8px;color:#183b9c;font-size:23px;letter-spacing:-.035em}.hv-callout p{margin:0;color:var(--hv-muted);font-size:12px;line-height:1.7}.hv-callout .right{padding:18px;border-radius:15px;background:#fff;color:#40516c;font-size:12px;line-height:1.7}
+.hv-cta{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:29px;border-radius:22px;background:linear-gradient(120deg,#12328f,#1d51c1);color:#fff}.hv-cta h2{margin:0 0 7px;color:#fff;font-size:23px;letter-spacing:-.03em}.hv-cta p{margin:0;color:rgba(255,255,255,.83);font-size:12px;line-height:1.6}.hv-cta .btn{flex:0 0 auto;background:#19c979;color:#fff}
+.hv-disclaimer{max-width:980px;margin:0 auto 22px;color:#778195;font-size:10px;line-height:1.7;text-align:center}
+@media(max-width:850px){.hv-hero{grid-template-columns:1fr}.hv-plans{grid-template-columns:1fr}.hv-hospitals{grid-template-columns:1fr 1fr}.hv-callout{grid-template-columns:1fr}}
+@media(max-width:600px){.hv-page{padding-top:20px}.hv-wrap{width:calc(100% - 28px)}.hv-hero{padding:26px 20px;border-radius:22px}.hv-hero p{font-size:13px}.hv-brand-card{padding:20px}.hv-stats{gap:7px;margin-bottom:40px}.hv-stat{padding:13px 7px}.hv-stat strong{font-size:16px}.hv-stat span{font-size:10px}.hv-plan{padding:22px}.hv-hospitals{grid-template-columns:1fr}.hv-hospital img{height:210px}.hv-table th,.hv-table td{padding:11px 9px;font-size:10px}.hv-cta{align-items:flex-start;flex-direction:column;padding:23px}.hv-cta .btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="container nav">
 <a class="brand" href="index.html" aria-label="JG Planos de Saúde"><img class="brand-logo-img" src="imagens/logo-jg-header.png" alt="Logomarca JG Planos de Saúde"><span><strong>JG Planos de Saúde</strong><small>Empresarial familiar com CNPJ</small></span></a>
-<nav class="menu" aria-label="Menu principal">
-<a href="index.html">Início</a><a href="unimed.html">Seguros Unimed</a><a href="sulamerica.html">SulAmérica</a><a href="bradesco.html">Bradesco</a><a href="amil.html">Amil</a><a href="hapvida.html">Hapvida</a><a href="sobre.html">Sobre Gerry</a>
-</nav><a class="btn btn-whatsapp btn-small" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20plano%20empresarial%20familiar." target="_blank" rel="noopener">WhatsApp</a></div></header><main><section class="operators section-padding"><div class="container">
-<span class="section-label">Planos empresariais para MEI e CNPJ</span>
-<h1 class="tables-heading">Hapvida</h1>
-<p class="intro">Planos empresariais Hapvida para MEI e CNPJ. Compare as opções, valores e redes de atendimento apresentadas nesta página. A composição da rede pode variar conforme o produto e a contratação.</p>
-<div class="operator-grid"><article class="hapvida-comparison operator-anchor" id="tabela-hapvida">
-<div class="hapvida-title">
-<div><img alt="Hapvida" src="imagens/hapvida.jpg"/><h3>Compare os planos Hapvida</h3><p>Três opções com coparticipação e atendimento regional.</p><span class="minimum-lives">A partir de 1 vida</span></div>
-<span class="hapvida-badge">COM COPARTICIPAÇÃO</span>
+<nav class="menu" aria-label="Menu principal"><a href="index.html">Início</a><a href="unimed.html">Seguros Unimed</a><a href="sulamerica.html">SulAmérica</a><a href="bradesco.html">Bradesco</a><a href="amil.html">Amil</a><a href="hapvida.html">Hapvida</a><a href="sobre.html">Sobre Gerry</a></nav>
+<a class="btn btn-whatsapp btn-small" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20conhecer%20o%20Hapvida." target="_blank" rel="noopener">WhatsApp</a>
+</div></header>
+<main class="hv-page"><div class="hv-wrap">
+<section class="hv-hero">
+<div><span class="hv-kicker">Hapvida Empresarial · Bahia</span><h1>Saúde para cuidar de você, com economia de verdade.</h1>
+<p>O Hapvida é uma opção para quem busca um plano de saúde econômico, com uma rede própria e integrada de hospitais, prontos atendimentos, clínicas e unidades de diagnóstico. Você pode escolher entre a modalidade Ambulatorial e o Nosso Plano, de acordo com a cobertura que precisa.</p>
+<div class="hv-chips"><span>Opção econômica</span><span>Rede própria na Bahia</span><span>Ambulatorial ou completo</span></div></div>
+<div class="hv-brand-card"><img src="imagens/hapvida.jpg" alt="Hapvida"><strong>Escolha a cobertura ideal para sua necessidade</strong><small>Conheça as duas modalidades e veja a estrutura de atendimento Hapvida na Bahia.</small></div>
+</section>
+<section class="hv-stats" aria-label="Rede Hapvida na Bahia"><article class="hv-stat"><strong>5 hospitais</strong><span>Unidades próprias indicadas no ebook para a Bahia</span></article><article class="hv-stat"><strong>18 clínicas</strong><span>Estrutura de atendimento em diversas cidades</span></article><article class="hv-stat"><strong>20 diagnósticos</strong><span>Unidades de apoio diagnóstico listadas no material</span></article></section>
+
+<section><div class="hv-heading"><span class="hv-eyebrow">Duas modalidades</span><h2>Escolha entre Ambulatorial e Nosso Plano</h2><p>O Ambulatorial prioriza consultas, exames e atendimentos ambulatoriais. O Nosso Plano amplia a proteção com cobertura hospitalar, incluindo internações, cirurgias e parto, conforme as condições contratuais.</p></div>
+<div class="hv-plans">
+<article class="hv-plan"><span class="label">Mais econômico</span><h3>Hapvida Ambulatorial</h3><p>Uma alternativa de menor custo para quem procura acesso a consultas, exames e cuidados ambulatoriais.</p><ul><li>Consultas médicas.</li><li>Exames previstos na cobertura ambulatorial.</li><li>Terapias ambulatoriais cobertas.</li><li>Atendimento de urgência e emergência, conforme regras do produto.</li><li>Acesso à rede ambulatorial Hapvida disponível na região.</li></ul><div class="not"><strong>Importante:</strong> não inclui parto, cirurgias nem internações hospitalares acima de 12 horas, conforme a modalidade informada para este produto.</div></article>
+<article class="hv-plan full"><span class="label">Cobertura completa</span><h3>Hapvida Nosso Plano</h3><p>Para quem deseja a cobertura ambulatorial somada à proteção hospitalar.</p><ul><li>Tudo o que está previsto no Ambulatorial: consultas, exames, terapias e urgência e emergência.</li><li>Internações hospitalares.</li><li>Cirurgias cobertas pelo contrato.</li><li>Cobertura para parto, conforme segmentação e carências contratuais.</li><li>Mais tranquilidade para situações que exigem atendimento hospitalar.</li></ul><div class="not"><strong>Em resumo:</strong> reúne os atendimentos ambulatoriais e a cobertura hospitalar, observadas as regras, carências e segmentação contratadas.</div></article>
+</div></section>
+
+<section class="hv-compare"><h3>Compare as coberturas</h3><div style="overflow-x:auto"><table class="hv-table"><thead><tr><th>Tipo de atendimento</th><th>Ambulatorial</th><th>Nosso Plano</th></tr></thead><tbody>
+<tr><td>Consultas médicas</td><td class="hv-check">Incluído</td><td class="hv-check">Incluído</td></tr>
+<tr><td>Exames</td><td class="hv-check">Incluído</td><td class="hv-check">Incluído</td></tr>
+<tr><td>Terapias ambulatoriais</td><td class="hv-check">Incluído</td><td class="hv-check">Incluído</td></tr>
+<tr><td>Urgência e emergência</td><td class="hv-check">Incluído*</td><td class="hv-check">Incluído*</td></tr>
+<tr><td>Cirurgias</td><td class="hv-no">Não inclui</td><td class="hv-check">Incluído*</td></tr>
+<tr><td>Internação hospitalar</td><td class="hv-no">Não inclui acima de 12h</td><td class="hv-check">Incluído*</td></tr>
+<tr><td>Parto</td><td class="hv-no">Não inclui</td><td class="hv-check">Incluído*</td></tr>
+</tbody></table></div></section>
+
+<section class="hv-network"><div class="hv-heading"><span class="hv-eyebrow">Rede própria e integrada</span><h2>Conheça alguns hospitais Hapvida na Bahia</h2><p>O ebook institucional de rede própria e integrada apresenta hospitais, prontos atendimentos, clínicas e unidades de diagnóstico em diversas cidades baianas.</p></div>
+<div class="hv-hospitals">
+<article class="hv-hospital"><img src="imagens/hapvida-rede/hospital-tereza-de-lisieux.jpg" alt="Fachada do Hospital Tereza de Lisieux, em Salvador"><div><h3>Hospital Tereza de Lisieux</h3><p>Av. Antônio Carlos Magalhães, 2408 – Itaigara, Salvador – BA.</p><span class="city">Salvador</span></div></article>
+<article class="hv-hospital"><img src="imagens/hapvida-rede/hospital-lauro-de-freitas.jpg" alt="Fachada do Hospital Lauro de Freitas"><div><h3>Hospital Lauro de Freitas</h3><p>Rod. BA, 2077 – Centro, Lauro de Freitas – BA.</p><span class="city">Lauro de Freitas</span></div></article>
+<article class="hv-hospital"><img src="imagens/hapvida-rede/hospital-semed.jpg" alt="Fachada do Hospital Semed em Camaçari"><div><h3>Hospital Semed</h3><p>Rua Francisco Drumond, 238 – Centro, Camaçari – BA.</p><span class="city">Camaçari</span></div></article>
+<article class="hv-hospital"><img src="imagens/hapvida-rede/hospital-francisca-de-sande.jpg" alt="Fachada do Hospital Francisca de Sande"><div><h3>Hospital Francisca de Sande</h3><p>Rua Professora Edelvira de Oliveira, 140 – Centro, Feira de Santana – BA.</p><span class="city">Feira de Santana</span></div></article>
+<article class="hv-hospital"><img src="imagens/hapvida-rede/hospital-cetro.jpg" alt="Fachada do Hospital Cetro em Alagoinhas"><div><h3>Hospital Cetro</h3><p>Rua Elvira Dórea, 1 – Centro, Alagoinhas Velha – BA.</p><span class="city">Alagoinhas</span></div></article>
 </div>
-<div aria-label="Tabela de preços Hapvida" class="hapvida-table-wrap" role="region" tabindex="0">
-<table class="hapvida-table">
-<thead><tr><th>Faixa etária</th><th>Ambulatorial<span class="plan-subtitle">Sem acomodação</span></th><th>Nosso Plano<span class="plan-subtitle">Enfermaria</span></th><th>Nosso Médico<span class="plan-subtitle">Apartamento</span></th></tr></thead>
-<tbody>
-<tr><td>0 a 18 anos</td><td>R$ 145,72</td><td>R$ 198,79</td><td>R$ 253,10</td></tr><tr><td>19 a 23 anos</td><td>R$ 163,21</td><td>R$ 222,64</td><td>R$ 283,47</td></tr><tr><td>24 a 28 anos</td><td>R$ 182,80</td><td>R$ 249,36</td><td>R$ 317,49</td></tr><tr><td>29 a 33 anos</td><td>R$ 210,22</td><td>R$ 286,76</td><td>R$ 365,11</td></tr><tr><td>34 a 38 anos</td><td>R$ 241,75</td><td>R$ 329,77</td><td>R$ 419,88</td></tr><tr><td>39 a 43 anos</td><td>R$ 287,68</td><td>R$ 392,43</td><td>R$ 499,66</td></tr><tr><td>44 a 48 anos</td><td>R$ 359,60</td><td>R$ 490,54</td><td>R$ 624,58</td></tr><tr><td>49 a 53 anos</td><td>R$ 449,50</td><td>R$ 613,18</td><td>R$ 780,73</td></tr><tr><td>54 a 58 anos</td><td>R$ 764,15</td><td>R$ 1.042,41</td><td>R$ 1.327,24</td></tr><tr><td>59 anos ou mais</td><td>R$ 855,85</td><td>R$ 1.167,50</td><td>R$ 1.486,51</td></tr>
-</tbody>
-</table>
-</div>
-<p class="coverage-alert"><strong>Atenção:</strong> o plano Ambulatorial cobre consultas, exames e atendimentos previstos no contrato, mas não oferece cobertura para internações e cirurgias. Para cobertura hospitalar, escolha Enfermaria ou Apartamento.</p>
-<div class="hapvida-hospitals"><div class="hospital-city"><strong>Salvador</strong><span>Hospital Teresa de Lisieux</span><span>Pronto Atendimento Cajazeiras</span><span>Pronto Atendimento Uruguai</span></div><div class="hospital-city"><strong>Região Metropolitana</strong><span>Hospital Lauro de Freitas</span><span>Hospital Semed - Camaçari</span></div><div class="hospital-city"><strong>Interior</strong><span>Hospital Francisca de Sande - Feira de Santana</span><span>Hospital Cetro - Alagoinhas</span></div></div>
-<a class="hapvida-cta" href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Vi%20a%20tabela%20do%20Hapvida%20no%20site%20e%20quero%20uma%20cotação." rel="noopener" target="_blank">Solicitar cotação Hapvida</a>
-</article><article class="hapvida-comparison partial">
-<div class="hapvida-title">
-<div><img alt="Hapvida" src="imagens/hapvida.jpg"/><h3>Hapvida com coparticipação parcial</h3><p>Consultas e exames isentos; cobrança somente em terapias.</p><span class="minimum-lives">A partir de 1 vida</span></div>
-<span class="hapvida-badge">PARCIAL EM TERAPIAS</span>
-</div>
-<div aria-label="Tabela de preços Hapvida com coparticipação parcial" class="hapvida-table-wrap" role="region" tabindex="0">
-<table class="hapvida-table">
-<thead><tr><th>Faixa etária</th><th>Ambulatorial<span class="plan-subtitle">Sem acomodação</span></th><th>Nosso Plano<span class="plan-subtitle">Enfermaria</span></th><th>Nosso Plano<span class="plan-subtitle">Apartamento</span></th></tr></thead>
-<tbody>
-<tr><td>0 a 18 anos</td><td>R$ 167,02</td><td>R$ 238,68</td><td>R$ 357,33</td></tr><tr><td>19 a 23 anos</td><td>R$ 187,06</td><td>R$ 267,32</td><td>R$ 400,21</td></tr><tr><td>24 a 28 anos</td><td>R$ 209,51</td><td>R$ 299,40</td><td>R$ 448,24</td></tr><tr><td>29 a 33 anos</td><td>R$ 240,94</td><td>R$ 344,31</td><td>R$ 515,48</td></tr><tr><td>34 a 38 anos</td><td>R$ 277,08</td><td>R$ 395,96</td><td>R$ 592,80</td></tr><tr><td>39 a 43 anos</td><td>R$ 329,73</td><td>R$ 471,19</td><td>R$ 705,43</td></tr><tr><td>44 a 48 anos</td><td>R$ 412,16</td><td>R$ 588,99</td><td>R$ 881,79</td></tr><tr><td>49 a 53 anos</td><td>R$ 515,20</td><td>R$ 736,24</td><td>R$ 1.102,24</td></tr><tr><td>54 a 58 anos</td><td>R$ 875,84</td><td>R$ 1.251,61</td><td>R$ 1.873,81</td></tr><tr><td>59 anos ou mais</td><td>R$ 980,94</td><td>R$ 1.401,80</td><td>R$ 2.098,67</td></tr>
-</tbody>
-</table>
-</div>
-<p class="coverage-alert"><strong>Atenção:</strong> o Ambulatorial não oferece cobertura para internações e cirurgias. Para cobertura hospitalar, escolha Enfermaria ou Apartamento.</p>
-<div class="therapy-note"><strong>Como funciona a coparticipação parcial</strong>Consultas eletivas, consultas de urgência e exames são isentos. A cobrança de coparticipação ocorre apenas em terapias, conforme as regras do produto.</div>
-<div class="hapvida-hospitals"><div class="hospital-city"><strong>Salvador</strong><span>Hospital Teresa de Lisieux</span><span>Pronto Atendimento Cajazeiras</span><span>Pronto Atendimento Uruguai</span></div><div class="hospital-city"><strong>Região Metropolitana</strong><span>Hospital Lauro de Freitas</span><span>Hospital Semed - Camaçari</span></div><div class="hospital-city"><strong>Interior</strong><span>Hospital Francisca de Sande - Feira de Santana</span><span>Hospital Cetro - Alagoinhas</span></div></div>
-<a class="hapvida-cta" href="https://wa.me/5571981181395?text=Olá%2C%20Gerry!%20Vi%20a%20tabela%20do%20Hapvida%20com%20coparticipação%20parcial%20no%20site%20e%20quero%20uma%20cotação." rel="noopener" target="_blank">Solicitar cotação desta opção</a>
-</article></div>
-<div class="analysis-box"><div><h3>Quer comparar esta opção com outras operadoras?</h3><p>Posso ajudar a avaliar valores, hospitais, regras de inclusão familiar e custo-benefício para sua empresa.</p></div><a class="btn btn-primary" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20hapvida%20empresarial." target="_blank" rel="noopener">Solicitar cotação</a></div>
-<p class="tables-disclaimer">As informações e os valores são referenciais e devem ser confirmados na cotação atualizada. A rede credenciada está sujeita a alterações pela operadora.</p>
-</div></section></main><footer class="footer"><div class="container footer-grid"><div><strong>JG Planos de Saúde</strong><p>Gerry Dias – Corretor de Planos de Saúde</p></div><div><p>WhatsApp: (71) 98118-1395</p><p><a href="mailto:planosdesaudejg@gmail.com">planosdesaudejg@gmail.com</a></p><p><a href="index.html">Voltar à página inicial</a></p></div></div></footer><a class="floating-whatsapp" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o." aria-label="Abrir conversa no WhatsApp"><span aria-hidden="true">✆</span></a></body></html>
+<div class="hv-cities"><span>Salvador</span><span>Lauro de Freitas</span><span>Camaçari</span><span>Feira de Santana</span><span>Alagoinhas</span><span>Candeias</span><span>Simões Filho</span><span>Dias d’Ávila</span><span>Mata de São João</span><span>Cruz das Almas</span><span>Santo Antônio de Jesus</span><span>Catu</span></div>
+</section>
+
+<section class="hv-callout"><div><span class="hv-eyebrow">Estrutura integrada</span><h2>Hospitais, clínicas e diagnósticos conectados.</h2><p>O material institucional descreve um modelo que integra atendimento médico, exames clínicos e diagnósticos em uma estrutura própria, com foco em praticidade e continuidade do cuidado.</p></div><div class="right"><strong>Além dos hospitais, o ebook lista na Bahia:</strong><br>• 2 prontos atendimentos<br>• 18 clínicas<br>• 20 unidades de diagnóstico<br><br><small>Dados do material institucional da rede Hapvida, referente ao 1º trimestre de 2025. A disponibilidade depende do produto e da rede contratada.</small></div></section>
+
+<p class="hv-disclaimer">*A cobertura efetiva depende da segmentação assistencial, do contrato, das carências, da área de comercialização e da rede credenciada disponível para o produto contratado. O ebook utilizado é institucional e apresenta a rede própria e integrada da Hapvida; ele não confirma, por si só, que todas as unidades estejam disponíveis em ambas as modalidades. Consulte a rede vigente e a elegibilidade antes da contratação. Endereços e unidades foram transcritos do ebook, páginas 32 a 42.</p>
+<section class="hv-cta"><div><h2>Quer descobrir se o Hapvida é a opção certa para você?</h2><p>Fale com Gerry Dias e receba uma orientação sobre a modalidade Ambulatorial ou Nosso Plano para seu CNPJ.</p></div><a class="btn" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o%20do%20Hapvida%20Ambulatorial%20ou%20Nosso%20Plano." target="_blank" rel="noopener">Solicitar cotação pelo WhatsApp</a></section>
+</div></main>
+<footer class="footer"><div class="container footer-grid"><div><strong>JG Planos de Saúde</strong><p>Gerry Dias – Corretor de Planos de Saúde</p></div><div><p>WhatsApp: (71) 98118-1395</p><p><a href="mailto:planosdesaudejg@gmail.com">planosdesaudejg@gmail.com</a></p><p><a href="index.html">Voltar à página inicial</a></p></div></div></footer>
+<a class="floating-whatsapp" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20conhecer%20o%20Hapvida." aria-label="Abrir conversa no WhatsApp"><span aria-hidden="true">✆</span></a>
+</body></html>
