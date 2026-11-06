@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perguntas Frequentes | JG Planos de Saúde</title>
+  <meta name="description" content="Entenda coparticipação, carência, migração e contratação de planos de saúde empresariais para MEI e CNPJ. Tire suas dúvidas com Gerry Dias.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero-hospitais.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="paginas.css">
+  <style>
+    .faq-page{padding:54px 0 78px;background:#f5f8fc;min-height:70vh}
+    .faq-wrap{width:min(100% - 40px,1040px);margin:auto}
+    .faq-hero{position:relative;overflow:hidden;border-radius:28px;padding:clamp(30px,5vw,58px);background:linear-gradient(125deg,#092c55 0%,#0b4774 58%,#087e91 100%);color:#fff;box-shadow:0 22px 55px rgba(11,48,82,.16)}
+    .faq-hero:after{content:"?";position:absolute;right:6%;top:-65px;font-size:310px;line-height:1;font-weight:900;color:rgba(255,255,255,.055);pointer-events:none}
+    .faq-kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(255,255,255,.25);border-radius:99px;background:rgba(255,255,255,.09);font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .faq-hero h1{max-width:720px;margin:20px 0 14px;color:#fff;font-size:clamp(2.15rem,5vw,3.65rem);line-height:1.06;letter-spacing:-.045em;font-weight:900}
+    .faq-hero p{max-width:650px;margin:0;color:rgba(255,255,255,.82);font-size:1.04rem;line-height:1.75}
+    .faq-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+    .faq-meta span{padding:9px 12px;border-radius:99px;background:rgba(255,255,255,.11);font-size:.78rem;font-weight:700}
+    .faq-intro{display:flex;justify-content:space-between;align-items:end;gap:24px;margin:48px 0 20px}
+    .faq-intro small{display:block;margin-bottom:8px;color:#0b7890;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    .faq-intro h2{margin:0;color:#102b46;font-size:clamp(1.55rem,3vw,2.2rem);letter-spacing:-.035em}
+    .faq-intro p{max-width:430px;margin:0;color:#617286;line-height:1.65;font-size:.94rem}
+    .faq-list{display:grid;gap:13px}
+    .faq-item{overflow:hidden;border:1px solid #e1e9f1;border-radius:17px;background:#fff;box-shadow:0 7px 22px rgba(20,48,78,.035);transition:border-color .2s,box-shadow .2s}
+    .faq-item[open]{border-color:#b9d7e5;box-shadow:0 12px 28px rgba(20,48,78,.07)}
+    .faq-item summary{display:flex;align-items:center;gap:16px;list-style:none;cursor:pointer;padding:21px 23px;color:#15334f;font-size:1rem;font-weight:800}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-number{display:grid;place-items:center;flex:0 0 35px;width:35px;height:35px;border-radius:11px;background:#edf6fa;color:#087b91;font-size:.78rem;font-weight:900}
+    .faq-question{flex:1}
+    .faq-plus{display:grid;place-items:center;flex:0 0 28px;width:28px;height:28px;border-radius:50%;background:#f0f5f8;color:#1b6e83;font-size:1.25rem;line-height:1;transition:transform .2s}
+    .faq-item[open] .faq-plus{transform:rotate(45deg)}
+    .faq-answer{padding:0 27px 23px 74px;color:#586b7e;font-size:.94rem;line-height:1.8}
+    .faq-answer p{margin:0 0 11px}
+    .faq-answer p:last-child{margin-bottom:0}
+    .faq-answer strong{color:#183b58}
+    .faq-note{margin-top:13px;padding:13px 15px;border-left:3px solid #1b91a3;border-radius:0 10px 10px 0;background:#f1f8fa;color:#486477;font-size:.87rem}
+    .faq-cta{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:42px;padding:clamp(24px,4vw,38px);border-radius:23px;background:#fff;border:1px solid #e1e9f1;box-shadow:0 14px 36px rgba(20,48,78,.06)}
+    .faq-cta-copy small{display:block;margin-bottom:7px;color:#0b8293;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+    .faq-cta h2{margin:0 0 8px;color:#102b46;font-size:clamp(1.35rem,3vw,1.9rem);letter-spacing:-.03em}
+    .faq-cta p{margin:0;color:#647589;line-height:1.65}
+    .faq-cta .btn{flex:0 0 auto;white-space:nowrap}
+    .faq-disclaimer{margin:22px auto 0;max-width:850px;color:#8492a2;font-size:.78rem;line-height:1.6;text-align:center}
+    .faq-disclaimer a{color:#58768c;text-decoration:underline}
+    @media(max-width:700px){
+      .faq-page{padding:28px 0 48px}.faq-wrap{width:calc(100% - 28px)}
+      .faq-hero{border-radius:22px}.faq-hero:after{right:-20px;top:-25px;font-size:210px}
+      .faq-intro{display:block;margin:35px 0 18px}.faq-intro p{margin-top:10px}
+      .faq-item summary{padding:17px 15px;gap:11px;font-size:.92rem}
+      .faq-number{flex-basis:31px;width:31px;height:31px}
+      .faq-answer{padding:0 17px 19px 57px;font-size:.9rem}
+      .faq-cta{align-items:stretch;flex-direction:column;border-radius:19px}
+      .faq-cta .btn{width:100%;text-align:center;white-space:normal}
+    }
+  </style>
+</head>
+<body>
+<header class="topbar"><div class="container nav">
+  <a class="brand" href="index.html" aria-label="JG Planos de Saúde"><img class="brand-logo-img" src="imagens/logo-jg-header.png" alt="Logomarca JG Planos de Saúde"><span><strong>JG Planos de Saúde</strong><small>Empresarial familiar com CNPJ</small></span></a>
+  <nav class="menu" aria-label="Menu principal">
+    <a href="index.html">Início</a><a href="unimed.html">Seguros Unimed</a><a href="sulamerica.html">SulAmérica</a><a href="bradesco.html">Bradesco</a><a href="amil.html">Amil</a><a href="hapvida.html">Hapvida</a><a href="sobre.html">Sobre Gerry</a><a href="faq.html" aria-current="page">Dúvidas</a>
+  </nav>
+  <a class="btn btn-whatsapp btn-small" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20plano%20empresarial%20familiar." target="_blank" rel="noopener">WhatsApp</a>
+</div></header>
+
+<main class="faq-page">
+  <div class="faq-wrap">
+    <section class="faq-hero">
+      <span class="faq-kicker">Central de dúvidas · JG Planos de Saúde</span>
+      <h1>Informação clara para escolher seu plano com segurança.</h1>
+      <p>Reunimos respostas para as dúvidas mais comuns sobre planos de saúde empresariais para MEI e CNPJ. E, se precisar de orientação para o seu caso, estou à disposição.</p>
+      <div class="faq-meta"><span>Coparticipação</span><span>Carências</span><span>Migração de plano</span><span>Contratação</span></div>
+    </section>
+
+    <div class="faq-intro">
+      <div><small>Guia prático</small><h2>Perguntas frequentes</h2></div>
+      <p>Clique em uma pergunta para abrir a resposta. As condições podem variar conforme a operadora, o produto e o contrato.</p>
+    </div>
+
+    <section class="faq-list" aria-label="Perguntas e respostas">
+      <details class="faq-item" open>
+        <summary><span class="faq-number">01</span><span class="faq-question">O que é coparticipação?</span><span class="faq-plus">+</span></summary>
+        <div class="faq-answer">
+          <p>É uma modalidade em que, além da mensalidade, o beneficiário paga um valor quando utiliza determinados serviços do plano, como consultas, exames ou terapias, conforme as regras do contrato.</p>
+          <p>Esse valor pode ser fixo ou calculado por percentual. A cobrança, os procedimentos sujeitos à coparticipação e os eventuais limites precisam estar previstos nas condições do plano.</p>
+          <div class="faq-note">Em geral, planos com coparticipação podem ter mensalidades menores. O ideal é comparar o custo mensal com a frequência de utilização esperada.</div>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="faq-number">02</span><span class="faq-question">O que é carência?</span><span class="faq-plus">+</span></summary>
+        <div class="faq-answer">
+          <p>Carência é o período que o beneficiário precisa aguardar, após a contratação, para ter acesso a determinadas coberturas do plano. Durante esse prazo, a mensalidade é paga normalmente, mas alguns atendimentos ainda podem não estar liberados.</p>
+          <p>Os prazos dependem do tipo de contratação, do número de beneficiários, do produto e das condições negociadas. Como referência legal para planos regulamentados, os limites máximos gerais são de 24 horas para urgência e emergência, 180 dias para os demais procedimentos e 300 dias para parto a termo.</p>
+          <div class="faq-note">Em contratos empresariais com até 29 beneficiários pode haver carências. Em contratos com 30 ou mais, há hipótese de isenção quando o ingresso ocorre dentro do prazo previsto pela ANS. É necessário analisar cada contratação.</div>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="faq-number">03</span><span class="faq-question">Como funciona a migração de um plano para outro?</span><span class="faq-plus">+</span></summary>
+        <div class="faq-answer">
+          <p>No dia a dia, muita gente usa a palavra “migração” para falar da troca de plano. Mas existem situações diferentes: mudança de produto dentro da mesma operadora, contratação de outro plano ou <strong>portabilidade de carências</strong>.</p>
+          <p>Na portabilidade, o beneficiário pode mudar para outro plano sem cumprir novamente carências ou cobertura parcial temporária, desde que atenda aos requisitos da ANS, como regras de permanência, compatibilidade entre os planos e situação de pagamento.</p>
+          <p>Antes de cancelar o plano atual, é importante verificar a elegibilidade, a documentação e a data de início do novo contrato. Assim, você evita ficar sem cobertura durante a transição.</p>
+          <div class="faq-note">Cada caso precisa ser avaliado individualmente. A troca de plano não significa, automaticamente, aproveitamento de todas as carências.</div>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="faq-number">04</span><span class="faq-question">Você cobra taxa de adesão?</span><span class="faq-plus">+</span></summary>
+        <div class="faq-answer">
+          <p><strong>Não cobramos taxa de adesão na maioria das contratações.</strong> Nosso atendimento e orientação para cotação fazem parte do serviço de corretagem.</p>
+          <p>Em poucos casos específicos, pode existir alguma cobrança relacionada às condições comerciais da operadora ou da administradora responsável pelo produto. Se isso acontecer, a informação é apresentada com clareza antes de qualquer contratação.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="faq-number">05</span><span class="faq-question">Posso incluir minha família no plano empresarial?</span><span class="faq-plus">+</span></summary>
+        <div class="faq-answer">
+          <p>Em muitos produtos empresariais é possível incluir familiares, como cônjuge e filhos, e alguns planos também aceitam outros graus de parentesco. Isso depende das regras de elegibilidade de cada operadora.</p>
+          <p>Na cotação, verificamos quem pode entrar no contrato, a quantidade mínima de vidas, os documentos necessários e as condições para MEI ou CNPJ.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="faq-number">06</span><span class="faq-question">Plano empresarial para MEI ou CNPJ tem carência?</span><span class="faq-plus">+</span></summary>
+        <div class="faq-answer">
+          <p>Pode ter. Em contratos coletivos empresariais com até 29 beneficiários, a operadora pode aplicar carências, conforme as regras do produto e da legislação. Para contratos com 30 ou mais beneficiários, a ANS prevê isenção em determinadas condições, inclusive quanto ao prazo de ingresso.</p>
+          <p>Também podem existir condições comerciais específicas de redução ou aproveitamento de carências. Por isso, é importante analisar o plano escolhido e o histórico do beneficiário antes de fechar a contratação.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="faq-number">07</span><span class="faq-question">Qual é a diferença entre plano com e sem coparticipação?</span><span class="faq-plus">+</span></summary>
+        <div class="faq-answer">
+          <p>No plano sem coparticipação, normalmente o beneficiário paga a mensalidade contratada, sem cobrança adicional por cada utilização coberta, ressalvadas as condições específicas do contrato.</p>
+          <p>No plano com coparticipação, além da mensalidade, pode haver cobrança quando determinados serviços são utilizados. A melhor opção depende do orçamento, da rede, da frequência de uso e das regras de cobrança de cada produto.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary><span class="faq-number">08</span><span class="faq-question">O que preciso para fazer uma cotação?</span><span class="faq-plus">+</span></summary>
+        <div class="faq-answer">
+          <p>Geralmente, precisamos saber a cidade de atendimento, a quantidade de pessoas, as idades dos beneficiários e se a empresa possui MEI ou outro tipo de CNPJ.</p>
+          <p>Com essas informações, podemos avaliar as opções disponíveis, comparar redes credenciadas, coberturas, valores e regras de contratação. A documentação é solicitada conforme a operadora e o produto escolhido.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="faq-cta">
+      <div class="faq-cta-copy">
+        <small>Atendimento direto com o corretor</small>
+        <h2>Quer fazer mais perguntas?</h2>
+        <p>Fale comigo pelo WhatsApp. Vou entender sua necessidade e orientar você sobre as opções para seu MEI ou CNPJ.</p>
+      </div>
+      <a class="btn btn-whatsapp" href="https://wa.me/5571981181395?text=Ol%C3%A1%2C%20Gerry!%20Li%20as%20perguntas%20frequentes%20do%20site%20e%20quero%20fazer%20mais%20perguntas%20sobre%20plano%20de%20sa%C3%BAde." target="_blank" rel="noopener">Pergunte ao corretor pelo WhatsApp</a>
+    </section>
+
+    <p class="faq-disclaimer">As respostas são informativas e não substituem a análise das condições gerais, da proposta e do contrato do plano escolhido. Regras e prazos podem variar conforme a modalidade de contratação e a operadora. Consulte também as orientações da <a href="https://www.gov.br/ans/pt-br" target="_blank" rel="noopener">Agência Nacional de Saúde Suplementar (ANS)</a>.</p>
+  </div>
+</main>
+</body>
+</html>
