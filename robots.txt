@@ -1,5 +1,4 @@
-User-agent: OAI-SearchBot
-Allow: /
-
 User-agent: *
 Allow: /
+
+Sitemap: https://jgplanosdesaude.com.br/sitemap.xml
